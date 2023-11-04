@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  3 NOV 2023 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  4 NOV 2023 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1099,18 +1099,26 @@ it / docs / concepts /
 [9
 
 ] (./tesi.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                tesi
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27107 strings out of 476855
- 522728 string characters out of 5822299
- 1451930 words of memory out of 5000000
+ 27135 strings out of 476855
+ 522970 string characters out of 5822299
+ 1455930 words of memory out of 5000000
  47811 multiletter control sequences out of 15000+600000
- 519108 words of font info for 150 fonts, out of 8000000 for 9000
+ 520669 words of font info for 173 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  108i,21n,106p,10626b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2022/texm
@@ -1119,7 +1127,7 @@ ts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
 bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx207
 4.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texli
 ve/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (9 pages, 70046 bytes).
+Output written on tesi.pdf (9 pages, 76336 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream
