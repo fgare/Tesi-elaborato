@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  4 NOV 2023 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  4 NOV 2023 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,10 +885,99 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count420
+\mult@box=\box56
+\multicol@leftmargin=\dimen173
+\c@unbalance=\count421
+\c@collectmore=\count422
+\doublecol@number=\count423
+\multicoltolerance=\count424
+\multicolpretolerance=\count425
+\full@width=\dimen174
+\page@free=\dimen175
+\premulticols=\dimen176
+\postmulticols=\dimen177
+\multicolsep=\skip129
+\multicolbaselineskip=\skip130
+\partial@page=\box57
+\last@line=\box58
+\maxbalancingoverflow=\dimen178
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@firstbox=\box61
+\mult@gfirstbox=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\c@minrows=\count426
+\c@columnbadness=\count427
+\c@finalcolumnbadness=\count428
+\last@try=\dimen179
+\multicolovershoot=\dimen180
+\multicolundershoot=\dimen181
+\mult@nat@firstbox=\box99
+\colbreak@box=\box100
+\mc@col@check@num=\count429
 ))
+(c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count430
+\Gm@cntv=\count431
+\c@Gm@tempcnt=\count432
+\Gm@bindingoffset=\dimen182
+\Gm@wd@mp=\dimen183
+\Gm@odd@mp=\dimen184
+\Gm@even@mp=\dimen185
+\Gm@layoutwidth=\dimen186
+\Gm@layoutheight=\dimen187
+\Gm@layouthoffset=\dimen188
+\Gm@layoutvoffset=\dimen189
+\Gm@dimlist=\toks22
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./tesi.aux)
+ (./tesi.aux
+(./frontespizio/titlepage.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -911,19 +1000,20 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Info: Redefining \it@ocap on input line 15.
 LaTeX Info: Redefining \it@ccap on input line 15.
- (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count420
-\scratchdimen=\dimen173
-\scratchbox=\box56
-\nofMPsegments=\count421
-\nofMParguments=\count422
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count423
-\MPscratchDim=\dimen174
-\MPnumerator=\count424
-\makeMPintoPDFobject=\count425
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count433
+\scratchdimen=\dimen190
+\scratchbox=\box101
+\nofMPsegments=\count434
+\nofMParguments=\count435
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count436
+\MPscratchDim=\dimen191
+\MPnumerator=\count437
+\makeMPintoPDFobject=\count438
+\everyMPtoPDFconversion=\toks24
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -933,7 +1023,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\big@size=\dimen175
+\big@size=\dimen192
 LaTeX Info: Redefining \microtypecontext on input line 15.
 Package microtype Info: Applying patch `item' on input line 15.
 Package microtype Info: Applying patch `toc' on input line 15.
@@ -975,7 +1065,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count426
+\BKM@id=\count439
 ))
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -993,42 +1083,128 @@ Package biblatex Info: ... file 'tesi.bbl' found.
  (./tesi.bbl)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-8.
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.21335pt
+* \headheight=15.95pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.60002pt
+* \marginparwidth=76.21515pt
+* \marginparsep=21.77576pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout2 = `frontespizio/titlepage.aux'.
+
+(./frontespizio/titlepage.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-36.35pt
+* \headheight=15.95pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.60002pt
+* \marginparwidth=76.21515pt
+* \marginparsep=21.77576pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<frontespizio/logounivector.pdf, id=4, 422.47905pt x 402.27107pt>
+File: frontespizio/logounivector.pdf Graphic file (type pdf)
+<use frontespizio/logounivector.pdf>
+Package pdftex.def Info: frontespizio/logounivector.pdf  used on input line 6.
+(pdftex.def)             Requested size: 142.26378pt x 135.45679pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
+
+ []
+
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 26--44
+[][] 
+ []
+
+[1
+
+
+
+
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./frontespizio/
+logounivector.pdf>])
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
-18.
-
-(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+20.
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-18.
-
+20.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-18.
+20.
 
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-18.
+20.
 
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-18.
+20.
 
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1037,20 +1213,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
-
-
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 19
+Package tocbasic Info: character protrusion at toc deactivated on input line 20
 .
  (./tesi.toc)
 \tf@toc=\write5
 \openout5 = `tesi.toc'.
 
- (./capitoli/cap1.tex
+
+(./capitoli/cap1.tex
 Capitolo 1.
 [2
+
+
+
 
 ]) (./capitoli/cap2.tex
 Capitolo 2.
@@ -1078,59 +1253,44 @@ Capitolo 6.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 29
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 30
 .
  (c:/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 29.
+(Font)              scaled to size 9.30756pt on input line 30.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [9
 
-Overfull \hbox (9.97867pt too wide) in paragraph at lines 29--29
-[]\T1/pplj/m/it/10.95 (-20) Cos'è Ku-ber-ne-tes? \T1/pplj/m/sc/10.95 (-20) url\
-T1/pplj/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / kubernetes . io / 
-it / docs / concepts /
- []
-
-[9
-
-] (./tesi.aux)
-
-LaTeX Warning: There were undefined references.
-
+] (./tesi.aux
+(./frontespizio/titlepage.aux))
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                tesi
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27135 strings out of 476855
- 522970 string characters out of 5822299
- 1455930 words of memory out of 5000000
- 47811 multiletter control sequences out of 15000+600000
- 520669 words of font info for 173 fonts, out of 8000000 for 9000
+ 27800 strings out of 476855
+ 533756 string characters out of 5822299
+ 1475455 words of memory out of 5000000
+ 48425 multiletter control sequences out of 15000+600000
+ 525829 words of font info for 193 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 108i,21n,106p,10626b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2022/texm
-f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2022/texmf-dist/fon
-ts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx207
-4.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texli
-ve/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (9 pages, 76336 bytes).
+ 108i,21n,106p,10626b,1416s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
+f-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/
+uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/
+texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on tesi.pdf (9 pages, 87599 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 57913 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 71230 words of extra memory for PDF output out of 74296 (max. 10000000)
 
