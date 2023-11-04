@@ -13,11 +13,31 @@
 		\item[Manutenibilità] Un problema ad un microservizio non si propaga all'intera applicazione ma rimane isolato all'interno di esso, facilitandone l'individuazione.		
 	\end{description}
 	
-	Obiettivo di questo progetto è sviluppare un sistema gestionale per un supermercato secondo i due approcci sopra descritti e confrontarne in seguito le prestazioni.
+	Obiettivo di questo progetto è sviluppare un sistema gestionale per un supermercato secondo i due approcci sopra descritti e confrontarne le prestazioni.
 	L'applicazione prevede l'interazione con clienti che effettuano acquisti dal supermercato e per ogni acquisto implementa la gestione dell'ordine, dalla rimozione dei prodotti dal magazzino fino all'avvenuto pagamento.
 	
-	Sono definiti due tipi di utenti:
-	\begin{description}
-		\item[Standard] \`E interessato all'acquisto di prodotti e genera pertanto nuovi ordini;
-		\item[Fornitore] Si occupa di rifornire periodicamente il magazzino.
-	\end{description}
+	I clienti sono di due tipi:
+	\begin{itemize}
+		\item \emph{Standard}. \`E interessato all'acquisto di prodotti e genera nuovi ordini;
+		\item \emph{Fornitore}. Si occupa di rifornire periodicamente il magazzino.
+	\end{itemize}
+	
+	Gli ordini seguono questo percorso:
+	\begin{enumerate}
+		\item \emph{Creato}. L'ordine è stato ricevuto dal sistema;
+		\item \emph{Confermato}. \`E stato confermato che nel magazzino ogni prodotto è presente in quantità sufficiente per soddisfare l'ordine;
+		\item \emph{Pagato}. Il pagamento dell'ordine è andato a buon fine;
+		\item \emph{Spedito}. L'ordine è stato spedito ed è possibile verificare lo stato della spedizione.
+	\end{enumerate}
+	
+	
+	
+	Nei capitoli seguenti si descriveranno dapprima lo stile architetturale monolitico e a microservizi, per poi concentrarsi nello specifico sull'applicazione sviluppata.
+	In dettaglio:
+	\begin{itemize}
+		\item \emph{Capitolo 2:} stato dell'arte nello sviluppo di applicazioni distribuite, relativi vantaggi e svantaggi di ogni approccio.
+		\item \emph{Capitolo 3:} architettura del sistema e tecnologie impiegate.
+		\item \emph{Capitolo 4:} spiegazione delle due soluzioni proposte.
+		\item \emph{Capitolo 5:} confronto di performance tra le due soluzioni.
+		\item \emph{Capitolo 6:} conclusioni e possibili sviluppi futuri.
+	\end{itemize}

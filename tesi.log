@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  4 NOV 2023 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  4 NOV 2023 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,27 +1227,33 @@ Capitolo 1.
 
 
 
-]) (./capitoli/cap2.tex
-Capitolo 2.
-[3
+]
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 
+21.
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+) [3
 
-]) (./capitoli/cap3.tex
+])
+(./capitoli/cap2.tex
+Capitolo 2.
+[4]) (./capitoli/cap3.tex
 Capitolo 3.
-[4
+[5
 
 ]) (./capitoli/cap4.tex
 Capitolo 4.
-[5
+[6
 
 ]) (./capitoli/cap5.tex
 Capitolo 5.
-[6
+[7
 
 ]) (./capitoli/cap6.tex
 Capitolo 6.
-[7
+[8
 
-]) [8
+]) [9
 
 ]
 Package microtype Info: Character `029' is missing
@@ -1264,7 +1270,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9
+ [10
 
 ] (./tesi.aux
 (./frontespizio/titlepage.aux))
@@ -1275,22 +1281,23 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27800 strings out of 476855
- 533756 string characters out of 5822299
- 1475455 words of memory out of 5000000
- 48425 multiletter control sequences out of 15000+600000
- 525829 words of font info for 193 fonts, out of 8000000 for 9000
+ 27879 strings out of 476855
+ 535352 string characters out of 5822299
+ 1477460 words of memory out of 5000000
+ 48472 multiletter control sequences out of 15000+600000
+ 534982 words of font info for 208 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 108i,21n,106p,10626b,1416s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,106p,10626b,1416s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
 f-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/
-uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/
-texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (9 pages, 87599 bytes).
+e1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/
+fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/
+texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/te
+xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on tesi.pdf (10 pages, 104625 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 71230 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 81470 words of extra memory for PDF output out of 89155 (max. 10000000)
 
