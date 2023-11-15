@@ -4,8 +4,8 @@
 \ttl@tocsep 
 \ttl@tocsep 
 \ttl@tocsep 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Confronto di una struttura monolitica e una a microservizi\blx@tocontentsinit {0}\cite {site:archComparison} \relax }}{6}{figure.caption.2}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Struttura di un sistema basato su macchine virtuali e container \blx@tocontentsinit {0}\cite {site:container_vs_VM}\relax }}{7}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Principio di funzionamento di un'applicazione monolitica e una a microservizi\blx@tocontentsinit {0}\cite {site:archComparison} \relax }}{6}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Confronto tra un sistema basato su macchine virtuali e container\blx@tocontentsinit {0}\cite {site:container_vs_VM}\relax }}{7}{figure.caption.3}%
 \ttl@tocsep 
 \ttl@tocsep 
 \ttl@tocsep 

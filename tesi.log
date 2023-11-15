@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  15 NOV 2023 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  15 NOV 2023 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,7 +959,7 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mult@nat@firstbox=\box99
 \colbreak@box=\box100
 \mc@col@check@num=\count431
-))
+)
 (c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -978,6 +978,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen188
 \Gm@layoutvoffset=\dimen189
 \Gm@dimlist=\toks22
+))
+(c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip131
+\enit@outerparindent=\dimen190
+\enit@toks=\toks23
+\enit@inbox=\box101
+\enit@count@id=\count435
+\enitdp@description=\count436
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1008,17 +1017,17 @@ LaTeX Info: Redefining \it@ccap on input line 26.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count435
-\scratchdimen=\dimen190
-\scratchbox=\box101
-\nofMPsegments=\count436
-\nofMParguments=\count437
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count438
-\MPscratchDim=\dimen191
-\MPnumerator=\count439
-\makeMPintoPDFobject=\count440
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count437
+\scratchdimen=\dimen191
+\scratchbox=\box102
+\nofMPsegments=\count438
+\nofMParguments=\count439
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count440
+\MPscratchDim=\dimen192
+\MPnumerator=\count441
+\makeMPintoPDFobject=\count442
+\everyMPtoPDFconversion=\toks25
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1028,7 +1037,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\big@size=\dimen192
+\big@size=\dimen193
 LaTeX Info: Redefining \microtypecontext on input line 26.
 Package microtype Info: Applying patch `item' on input line 26.
 Package microtype Info: Applying patch `toc' on input line 26.
@@ -1070,7 +1079,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count441
+\BKM@id=\count443
 ))
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1323,21 +1332,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (./frontespizio/titlepage.aux))
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28146 strings out of 476855
- 540031 string characters out of 5822299
- 1480223 words of memory out of 5000000
- 48625 multiletter control sequences out of 15000+600000
- 540245 words of font info for 283 fonts, out of 8000000 for 9000
+ 28506 strings out of 476855
+ 546124 string characters out of 5822299
+ 1487742 words of memory out of 5000000
+ 48956 multiletter control sequences out of 15000+600000
+ 541660 words of font info for 303 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  108i,23n,106p,10626b,2455s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
@@ -1346,10 +1350,10 @@ e1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/
 fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/
 texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (13 pages, 288325 bytes).
+Output written on tesi.pdf (13 pages, 288600 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
  35 named destinations out of 1000 (max. 500000)
  81517 words of extra memory for PDF output out of 89155 (max. 10000000)
 
