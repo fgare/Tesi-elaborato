@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  4 NOV 2023 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  15 NOV 2023 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,16 +886,21 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
+(c:/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+\c@subfigure=\count420
+\c@subtable=\count421
+)
 (c:/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count420
+\c@tracingmulticols=\count422
 \mult@box=\box56
 \multicol@leftmargin=\dimen173
-\c@unbalance=\count421
-\c@collectmore=\count422
-\doublecol@number=\count423
-\multicoltolerance=\count424
-\multicolpretolerance=\count425
+\c@unbalance=\count423
+\c@collectmore=\count424
+\doublecol@number=\count425
+\multicoltolerance=\count426
+\multicolpretolerance=\count427
 \full@width=\dimen174
 \page@free=\dimen175
 \premulticols=\dimen176
@@ -945,15 +950,15 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box96
 \@tempa=\box97
 \@tempa=\box98
-\c@minrows=\count426
-\c@columnbadness=\count427
-\c@finalcolumnbadness=\count428
+\c@minrows=\count428
+\c@columnbadness=\count429
+\c@finalcolumnbadness=\count430
 \last@try=\dimen179
 \multicolovershoot=\dimen180
 \multicolundershoot=\dimen181
 \mult@nat@firstbox=\box99
 \colbreak@box=\box100
-\mc@col@check@num=\count429
+\mc@col@check@num=\count431
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -961,9 +966,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count430
-\Gm@cntv=\count431
-\c@Gm@tempcnt=\count432
+\Gm@cnth=\count432
+\Gm@cntv=\count433
+\c@Gm@tempcnt=\count434
 \Gm@bindingoffset=\dimen182
 \Gm@wd@mp=\dimen183
 \Gm@odd@mp=\dimen184
@@ -980,39 +985,39 @@ Package csquotes Info: ... found 'babel' package.
 (./frontespizio/titlepage.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \it@ocap on input line 15.
-LaTeX Info: Redefining \it@ccap on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Info: Redefining \it@ocap on input line 26.
+LaTeX Info: Redefining \it@ccap on input line 26.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count433
+\scratchcounter=\count435
 \scratchdimen=\dimen190
 \scratchbox=\box101
-\nofMPsegments=\count434
-\nofMParguments=\count435
+\nofMPsegments=\count436
+\nofMParguments=\count437
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count436
+\MPscratchCnt=\count438
 \MPscratchDim=\dimen191
-\MPnumerator=\count437
-\makeMPintoPDFobject=\count438
+\MPnumerator=\count439
+\makeMPintoPDFobject=\count440
 \everyMPtoPDFconversion=\toks24
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1024,18 +1029,18 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \big@size=\dimen192
-LaTeX Info: Redefining \microtypecontext on input line 15.
-Package microtype Info: Applying patch `item' on input line 15.
-Package microtype Info: Applying patch `toc' on input line 15.
-Package microtype Info: Applying patch `eqnum' on input line 15.
-Package microtype Info: Applying patch `footnote' on input line 15.
+LaTeX Info: Redefining \microtypecontext on input line 26.
+Package microtype Info: Applying patch `item' on input line 26.
+Package microtype Info: Applying patch `toc' on input line 26.
+Package microtype Info: Applying patch `eqnum' on input line 26.
+Package microtype Info: Applying patch `footnote' on input line 26.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 15.
+LaTeX Info: Redefining \showhyphens on input line 26.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1046,7 +1051,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 15.
+Package hyperref Info: Link coloring ON on input line 26.
  (./tesi.out)
 (./tesi.out)
 \@outlinefile=\write4
@@ -1059,13 +1064,13 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 15.
+(scrreprt)           before \begin{document} on input line 26.
  (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count439
+\BKM@id=\count441
 ))
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1081,8 +1086,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' found.
  (./tesi.bbl)
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1182,29 +1187,29 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 26--44
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./frontespizio/
 logounivector.pdf>])
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
-20.
+31.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-20.
+31.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-20.
+31.
 
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-20.
+31.
 
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-20.
+31.
 
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1213,9 +1218,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package tocbasic Info: character protrusion at toc deactivated on input line 20
+Package tocbasic Info: character protrusion at toc deactivated on input line 31
 .
- (./tesi.toc)
+ (./tesi.toc
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+)
 \tf@toc=\write5
 \openout5 = `tesi.toc'.
 
@@ -1229,7 +1238,7 @@ Capitolo 1.
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 
-21.
+26.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 ) [3
@@ -1237,67 +1246,110 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 ])
 (./capitoli/cap2.tex
 Capitolo 2.
-[4]) (./capitoli/cap3.tex
-Capitolo 3.
+[4]
+<img/cap2/Monolithic_architecture.png, id=66, 444.66125pt x 386.94562pt>
+File: img/cap2/Monolithic_architecture.png Graphic file (type png)
+<use img/cap2/Monolithic_architecture.png>
+Package pdftex.def Info: img/cap2/Monolithic_architecture.png  used on input li
+ne 27.
+(pdftex.def)             Requested size: 209.12683pt x 181.98254pt.
+<img/cap2/Microservice_architecture.png, id=67, 444.66125pt x 320.69812pt>
+File: img/cap2/Microservice_architecture.png Graphic file (type png)
+<use img/cap2/Microservice_architecture.png>
+Package pdftex.def Info: img/cap2/Microservice_architecture.png  used on input 
+line 31.
+(pdftex.def)             Requested size: 209.12683pt x 150.826pt.
+
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 25--33
+[][] [] 
+ []
+
 [5
-
-]) (./capitoli/cap4.tex
-Capitolo 4.
-[6
-
-]) (./capitoli/cap5.tex
-Capitolo 5.
-[7
-
-]) (./capitoli/cap6.tex
-Capitolo 6.
-[8
-
-]) [9
 
 ]
 Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             in font `T1/pplj/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 30
+ [6 <./img/cap2/Monolithic_architecture.png (PNG copy)> <./img/cap2/Microservic
+e_architecture.png (PNG copy)>]
+<img/cap2/Diagram_Containers_VirtualMachines.png, id=83, 3854.4pt x 1336.995pt>
+
+File: img/cap2/Diagram_Containers_VirtualMachines.png Graphic file (type png)
+<use img/cap2/Diagram_Containers_VirtualMachines.png>
+Package pdftex.def Info: img/cap2/Diagram_Containers_VirtualMachines.png  used 
+on input line 69.
+(pdftex.def)             Requested size: 418.25368pt x 145.07062pt.
+) (./capitoli/cap3.tex
+Capitolo 3.
+[7 <./img/cap2/Diagram_Containers_VirtualMachines.png>]) (./capitoli/cap4.tex
+Capitolo 4.
+[8
+
+]) (./capitoli/cap5.tex
+Capitolo 5.
+[9
+
+]) (./capitoli/cap6.tex
+Capitolo 6.
+[10
+
+]) [11
+
+]
+Package tocbasic Info: character protrusion at lof deactivated on input line 41
 .
- (c:/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
+ (./tesi.lof)
+\tf@lof=\write6
+\openout6 = `tesi.lof'.
+
+ [12
+
+]
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 42
+.
+
+(c:/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 30.
+(Font)              scaled to size 9.30756pt on input line 42.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10
+ [13
 
 ] (./tesi.aux
 (./frontespizio/titlepage.aux))
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27879 strings out of 476855
- 535352 string characters out of 5822299
- 1477460 words of memory out of 5000000
- 48472 multiletter control sequences out of 15000+600000
- 534982 words of font info for 208 fonts, out of 8000000 for 9000
+ 28146 strings out of 476855
+ 540031 string characters out of 5822299
+ 1480223 words of memory out of 5000000
+ 48625 multiletter control sequences out of 15000+600000
+ 540245 words of font info for 283 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 108i,23n,106p,10626b,1416s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,106p,10626b,2455s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
 f-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/typ
 e1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/
 fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/
 texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (10 pages, 104625 bytes).
+Output written on tesi.pdf (13 pages, 288325 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 81470 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 81517 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1,9 +1,12 @@
 \chapter{Introduzione}
 
-	Un'architettura a microservizi è un approccio architetturale legato allo sviluppo di applicazioni e basato su diversi servizi distribuibili singolarmente.
-	Questo approccio scompone la logica applicativa in componenti piccole ed autonome, consentendo lo sviluppo e il rilascio indipendenti dei singoli servizi\cite{doc:kube}.
+	Lo sviluppo di applicazioni distribuite rappresenta una disciplina fondamentale nell'evoluzione del mondo dell'informatica.
+	Questa pratica si concentra sulla progettazione ed implementazione di sistemi software che operano su reti di computer interconnessi, consentendo la condivisione efficiente di risorse e dati.
+	All'interno del panorama tecnologico odierno lo sviluppo di applicazioni distribuite risulta cruciale per soddisfare le esigenze di sistemi complessi.
 	
-	Un architettura orientata ai microservizi si contrappone ad un'architettura monolitica, in cui l'intera applicazione è sviluppata e distribuita come un unico componente.
+	In ambito di sviluppo delle applicazioni suddette si riconoscono due grandi modalità di approccio al problema: un approccio più tradizionale che vede il sistema da sviluppare come un'unica unità, ed un metodo più moderno che mira a frammentare il problema principale in unità di minori dimensioni cooperanti tra loro.
+	Il primo approccio descritto segue un'architettura monolitica e prevede che l'intera applicazione sia sviluppata e distribuita come un unico componente;
+	contrapposta a questa negli ultimi anni è emersa l'architettura a microservizi,	un approccio architetturale che mira a scomporre la logica applicativa in componenti piccole ed autonome, consentendo lo sviluppo e il rilascio indipendenti dei singoli servizi\cite{doc:kube}.
 	
 	L'approcio a microservizi porta con sè una serie di vantaggi:
 	\begin{description}
@@ -13,8 +16,10 @@
 		\item[Manutenibilità] Un problema ad un microservizio non si propaga all'intera applicazione ma rimane isolato all'interno di esso, facilitandone l'individuazione.		
 	\end{description}
 	
-	Obiettivo di questo progetto è sviluppare un sistema gestionale per un supermercato secondo i due approcci sopra descritti e confrontarne le prestazioni.
-	L'applicazione prevede l'interazione con clienti che effettuano acquisti dal supermercato e per ogni acquisto implementa la gestione dell'ordine, dalla rimozione dei prodotti dal magazzino fino all'avvenuto pagamento.
+	Obiettivo di questo progetto è sviluppare un semplice sistema gestionale di un supermercato secondo i due approcci sopra descritti e confrontarne infine le prestazioni.
+	
+	L'applicazione prevede l'interazione con clienti che acquistano prodotti dal supermercato e per ogni acquisto implementa la gestione dell'ordine, dalla rimozione dei prodotti dal magazzino fino all'avvenuto pagamento.
+	Possiamo vedere il servizio complessivamente offerto come l'e-commerce di un supermercato.
 	
 	I clienti sono di due tipi:
 	\begin{itemize}
@@ -31,8 +36,7 @@
 	\end{enumerate}
 	
 	
-	
-	Nei capitoli seguenti si descriveranno dapprima lo stile architetturale monolitico e a microservizi, per poi concentrarsi nello specifico sull'applicazione sviluppata.
+	Nei capitoli seguenti si descriveranno dapprima lo stile architetturale monolitico e a microservizi, li si confronterà e si elencheranno pro e contro, per poi concentrarsi nello specifico sull'applicazione sviluppata.
 	In dettaglio:
 	\begin{itemize}
 		\item \emph{Capitolo 2:} stato dell'arte nello sviluppo di applicazioni distribuite, relativi vantaggi e svantaggi di ogni approccio.

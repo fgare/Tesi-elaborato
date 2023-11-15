@@ -32,6 +32,32 @@
       \verb https://kubernetes.io/it/docs/concepts/overview/what-is-kubernetes/
       \endverb
     \endentry
+    \entry{site:archComparison}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{label}{site}
+      \field{title}{Microservices vs. monolithic architecture -- When monoliths grow too big it may be time to transition to microservices}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith
+      \endverb
+    \endentry
+    \entry{site:container_vs_VM}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{label}{site}
+      \field{title}{Containers vs. virtual machines -- Learn the differences between containers and virtual machines, popular providers for each, and how they can be used together}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
