@@ -1,1 +1,160 @@
 \chapter{Architettura del sistema}
+
+	Nel corso di questo capito verrà dapprima posta l'attenzione sulla struttura dei due sistemi sviluppati, per poi focalizzarsi sulla descrizione delle tecnologie utilizzate.
+
+
+\section{Struttura}
+	
+	Come già precedentemente evidenziato il sistema è stato sviluppato seguendo due filosofie di sviluppo differenti, dapprima secondo un approccio monolitico ed in seguito seguendo un approccio a microservizi;
+	le due applicazioni sono tra di loro molto simili, condividono buona parte del codice e sfruttano le stesse tecnologie.
+	
+	\smallskip
+	L'applicazione sviluppata in modo monolitico espone alcune chiamate API REST, che tramite il protocollo HTTP le permettono di ricevere richieste ed inviare risposte agli applicativi lato client.
+	Lo scambio di informazioni tra client e server avviene scambiando messaggi in formato JSON ed è protetto con algoritmi di crittografia e metodi di autenticazione tramite token, il tutto per garantire sicurezza e privatezza dei dati scambiati.
+	Per la conservazione dei dati persistenti ()quali informazioni sugli utenti, sulla merce in magazzino o sugli ordini) si utilizza infine un database PostgreSQL.
+	
+	\smallskip
+	L'applicazione a microservizi nasce dall'applicazione monolitica e la scompone in un numero di unità pari al numero di servizi complessivamente offerti, nel contesto applicativo ciascun modulo si riduce così ad esporre una singola chiamata API, occupandosi di un singolo aspetto tra i passi successivi che portano dalla scelta dei prodotti fino alla spedizione dell'ordine.
+	Il sistema si compone in questo caso di un cluster di server eseguiti all'interno di container e, in un contesto più ampio, di un cluster Kubernetes.
+
+
+
+\section{Tecnologie utilizzate}
+
+\subsection{Python}
+	
+	Python è un linguaggio di programmazione \emph{general-purpose} orientato agli oggetti e ad alto livello, molto diffuso in ambiti quali l'analisi dei dati, l'intelligenza artificiale, la finanza e la sicurezza informatica\cite[7-8]{book:lutz-python}.
+	Pone grande enfasi sulla leggibilità e dispone di una sintassi particolarmente semplice che, insieme a una vastissima gamma di librerie, permette una grande riduzione in termini di linee di codice\cite{wiki:python}.
+	
+	
+\subsection{PostgreSQL}
+	
+	PostgreSQL è un Database Management System (DBMS) di tipo relazionale e ad oggetti, molto potente ed open source.
+	Si tratta di una valida alternativa ad altri progetti sia liberi che con licenza ed è divenuto celebre nel tempo per alcuni suoi punti di forza quali la programmabilità, la quale permette di incrementare astrazione, affidabilità e prestazioni\cite{doc:postgresql, wiki:postgresql}.
+
+
+\subsection{Docker}
+	
+	Docker è una piattaforma aperta per lo sviluppo, la consegna e l'esecuzione di applicazioni all'interno di container.
+	All'interno di Docker sono definiti essenzialmente due oggetti principali:
+	
+	\begin{description}
+		\item[Immagini]
+			Un immagine è un template di sola lettura contenente le istruzioni per generare un nuovo container.
+			La generazione di nuove immagini è estremamente semplice ed avviene sulla base di istruzioni definite in un \emph{Dockerfile}, un file contenente le istruzioni per la generazione di un ambiente preconfigurato e pronto per l'esecuzione.
+			Ogni istruzione all'interno del Dockerfile corrisponde a un livello nella generazione dell'immagine, facilitando la condivisione e la distribuzione della stessa; quando un Dockerfile viene modificato e l'immagine è ricompilata, solo i livelli che hanno subito modifiche vengono ricompilati.
+			Si tratta quindi di strutture molto leggere, piccole e veloci se comparate ad altri modelli di virtualizzazione\cite{doc:docker-overview}.
+			
+		\item[Container]
+			L'idea alla base dei container è già stata spiegata nella Sezione \ref{sec:depl_on_cont},
+			nel contesto di Docker i container assumono il ruolo di istanze eseguibili delle immagini\cite{doc:docker-overview}.
+	\end{description}
+	
+	Docker risulta ottimo per la gestione di container su un singolo host, offrendo strumenti per la limitazione e il monitoraggio delle risorse o il bilanciamento del carico (attraverso \emph{Docker Swarm} o \emph{Overlay Network Driver}), con caratteristiche che risultano tuttavia limitate rispetto ad altri orchestratori più avanzati\cite{site:kube_better_docker}.
+	
+	
+\subsection{Kubernetes}
+	
+	Kubernetes è una piattaforma open source per l'automazione della distribuzione, scalabilità e gestione di applicazioni eseguite su container, azioni che nell'insieme prendono il nome di \emph{orchestrazione}.
+	La necessità di orchestratori di container nasce in ambito di produzione, laddove c'è la necessità di gestire un gran numero di container ed assicurarsi che i servizi offerti siano sempre attivi\cite{doc:docker-overview}.
+
+	Alcune delle caratteristiche principali di Kubernetes sono:
+	\begin{description}
+		\item[Gestione delle risorse]
+			Permette di porre limiti sulle risorse utilizzabili da un container (RAM, CPU, disco, etc.).
+		
+		\item[Bilanciamento del carico]
+			\`E in grado di gestire più repliche di uno stesso container e gestire il traffico in ingresso distribuendolo uniformemente sulle istanze attive.
+			Fornisce inoltre la funzione di \emph{auto-scaling} che permette di variare il dinamicamente il numero di istanze di un container sulla base del traffico di rete.
+			
+		\item[Self-healing]
+			Termina automaticamente i container che si sono bloccati e li sostituisce con nuove istanze degli stessi.
+			
+		\item[Configurazione dichiarativa]
+			\`E possibile lavorare in modalità DSC (\emph{Desired State Configuration}), in cui un cluster può essere configurato utilizzando dei file che descrivono lo stato in cui si vuole portare il sistema.
+			La fase di transizione dallo stato attuale del cluster allo stato desiderato è del tutto trasparente all'utente e non è in alcun modo modificabile dall'utente, sarà Kubernetes a prendere tutte le decisioni al fine di raggiungere lo stato finale.
+	\end{description}
+	
+	Gli elementi chiave di Kubernetes sono \emph{Nodi}, \emph{Cluster}, \emph{Pod}, \emph{Deployment}, \emph{Service}.
+	Di seguito una breve presentazione per ognuno di essi:
+	
+	
+\paragraph{Cluster}
+	Un cluster è l'unita logica più ampia definita in Kubernetes e rappresenta l'ambiente all'interno del quale sono orchestrati i container.
+	
+	
+\paragraph{Nodi}
+	I nodi possono essere una macchina fisica o virtuale e rappresentano i punti tra i quali viene suddiviso il carico di lavoro.
+	Ne sono definiti due tipi: i \emph{control plane node} e i \emph{worker node}, i primi gestiscono l'interazione con il cluster e si occupano di distribuire uniformemente il carico di lavoro tra i \emph{worker node}; i secondi sono nodi operativi, sui quali vengono istanziati i \emph{pod}\cite{doc:kube-nodes}.
+
+
+\paragraph{Pod}
+	Un Pod è la più piccola unità definibile con Kubernetes e corrisponde a un gruppo di uno o più container che condividono spazio di archiviazione e risorse di rete.
+	Ogni pod modella di fatto un host logico\cite{doc:kube-pod}.
+
+
+\paragraph{Deployment e Replicaset}
+	Un \emph{Deployment} è un oggetto Kubernetes che permette di dichiarare come le applicazioni al suo interno debbano essere gestite, distribuite e quante risorse gli si debba dedicare.
+	All'interno del deployment viene solitamente definito un oggetto \emph{ReplicaSet}, il quale racchiude un insieme di pod che condividono una configurazione comune.
+	La risorsa \emph{ReplicaSet} si occupa di mantenere il numero di repliche desiderato per ciascun pod, istanziandone di nuovi o distruggendo quelli bloccati.
+
+
+\paragraph{Service}
+
+	
+	
+\subsection{API REST}
+	
+	
+	
+	
+\subsection{JWT}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

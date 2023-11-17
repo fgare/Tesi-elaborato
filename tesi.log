@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  15 NOV 2023 23:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  17 NOV 2023 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1256,13 +1256,13 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 (./capitoli/cap2.tex
 Capitolo 2.
 [4]
-<img/cap2/Monolithic_architecture.png, id=66, 444.66125pt x 386.94562pt>
+<img/cap2/Monolithic_architecture.png, id=82, 444.66125pt x 386.94562pt>
 File: img/cap2/Monolithic_architecture.png Graphic file (type png)
 <use img/cap2/Monolithic_architecture.png>
 Package pdftex.def Info: img/cap2/Monolithic_architecture.png  used on input li
 ne 27.
 (pdftex.def)             Requested size: 209.12683pt x 181.98254pt.
-<img/cap2/Microservice_architecture.png, id=67, 444.66125pt x 320.69812pt>
+<img/cap2/Microservice_architecture.png, id=83, 444.66125pt x 320.69812pt>
 File: img/cap2/Microservice_architecture.png Graphic file (type png)
 <use img/cap2/Microservice_architecture.png>
 Package pdftex.def Info: img/cap2/Microservice_architecture.png  used on input 
@@ -1281,28 +1281,29 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [6 <./img/cap2/Monolithic_architecture.png (PNG copy)> <./img/cap2/Microservic
 e_architecture.png (PNG copy)>]
-<img/cap2/Diagram_Containers_VirtualMachines.png, id=83, 3854.4pt x 1336.995pt>
+<img/cap2/Diagram_Containers_VirtualMachines.png, id=99, 3854.4pt x 1336.995pt>
 
 File: img/cap2/Diagram_Containers_VirtualMachines.png Graphic file (type png)
 <use img/cap2/Diagram_Containers_VirtualMachines.png>
 Package pdftex.def Info: img/cap2/Diagram_Containers_VirtualMachines.png  used 
-on input line 69.
+on input line 70.
 (pdftex.def)             Requested size: 418.25368pt x 145.07062pt.
 ) (./capitoli/cap3.tex
 Capitolo 3.
-[7 <./img/cap2/Diagram_Containers_VirtualMachines.png>]) (./capitoli/cap4.tex
-Capitolo 4.
-[8
+[7 <./img/cap2/Diagram_Containers_VirtualMachines.png>] [8
 
-]) (./capitoli/cap5.tex
+] [9])
+(./capitoli/cap4.tex
+Capitolo 4.
+[10] [11]) (./capitoli/cap5.tex
 Capitolo 5.
-[9
+[12
 
 ]) (./capitoli/cap6.tex
 Capitolo 6.
-[10
+[13
 
-]) [11
+]) [14
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 41
@@ -1311,7 +1312,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 41
 \tf@lof=\write6
 \openout6 = `tesi.lof'.
 
- [12
+ [15
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 42
@@ -1326,34 +1327,45 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [13
 
-] (./tesi.aux
-(./frontespizio/titlepage.aux))
+Overfull \hbox (8.9834pt too wide) in paragraph at lines 42--42
+\T1/fvm/m/n/10.95 Improved % 20container % 20orchestration % 3A % 20Kubernetes 
+% 20provides ,[] demand %
+ []
+
+[16
+
+] (./tesi.aux (./frontespizio/titlepage.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28506 strings out of 476855
- 546124 string characters out of 5822299
- 1487742 words of memory out of 5000000
- 48956 multiletter control sequences out of 15000+600000
- 541660 words of font info for 303 fonts, out of 8000000 for 9000
+ 28678 strings out of 476855
+ 548886 string characters out of 5822299
+ 1489197 words of memory out of 5000000
+ 49001 multiletter control sequences out of 15000+600000
+ 547687 words of font info for 388 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 108i,23n,106p,10626b,2455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,106p,10626b,2452s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
 f-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/typ
 e1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/
 fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/
 texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (13 pages, 288600 bytes).
+Output written on tesi.pdf (16 pages, 307026 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 81517 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 81581 words of extra memory for PDF output out of 89155 (max. 10000000)
 

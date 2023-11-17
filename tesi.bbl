@@ -24,13 +24,78 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labeltitlesource}{title}
       \field{label}{doc}
-      \field{title}{Cos'è Kubernetes?}
+      \field{title}{Overview on Kubernetes}
       \verb{urlraw}
-      \verb https://kubernetes.io/it/docs/concepts/overview/what-is-kubernetes/
+      \verb https://kubernetes.io/docs/concepts/overview/
       \endverb
       \verb{url}
-      \verb https://kubernetes.io/it/docs/concepts/overview/what-is-kubernetes/
+      \verb https://kubernetes.io/docs/concepts/overview/
       \endverb
+    \endentry
+    \entry{doc:docker-overview}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{Docker overview}
+      \verb{urlraw}
+      \verb https://docs.docker.com/get-started/overview/
+      \endverb
+      \verb{url}
+      \verb https://docs.docker.com/get-started/overview/
+      \endverb
+    \endentry
+    \entry{doc:kube-nodes}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{Kubernetes nodes}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/architecture/nodes/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/architecture/nodes/
+      \endverb
+    \endentry
+    \entry{doc:kube-pod}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{Pods -- Pods are the smallest deployable units of computing that you can create and manage in Kubernetes}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/workloads/pods/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/workloads/pods/
+      \endverb
+    \endentry
+    \entry{book:lutz-python}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f9b161dc8eaf25ea05f8bac50ac9596d}{%
+           family={Lutz},
+           familyi={L\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{f9b161dc8eaf25ea05f8bac50ac9596d}
+      \strng{fullhash}{f9b161dc8eaf25ea05f8bac50ac9596d}
+      \strng{bibnamehash}{f9b161dc8eaf25ea05f8bac50ac9596d}
+      \strng{authorbibnamehash}{f9b161dc8eaf25ea05f8bac50ac9596d}
+      \strng{authornamehash}{f9b161dc8eaf25ea05f8bac50ac9596d}
+      \strng{authorfullhash}{f9b161dc8eaf25ea05f8bac50ac9596d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-596-15806-4}
+      \field{title}{Learning Python}
+      \field{year}{2009}
+      \field{dateera}{ce}
     \endentry
     \entry{site:archComparison}{online}{}
       \field{sortinit}{s}
@@ -56,6 +121,58 @@
       \endverb
       \verb{url}
       \verb https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms
+      \endverb
+    \endentry
+    \entry{site:kube_better_docker}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{label}{site}
+      \field{title}{Kubernetes vs Docker: A comprehensive comparison}
+      \verb{urlraw}
+      \verb https://www.civo.com/blog/kubernetes-vs-docker-a-comprehensive-comparison#:~:text=Improved%20container%20orchestration%3A%20Kubernetes%20provides,demand%2C%20ensuring%20efficient%20resource%20utilization.
+      \endverb
+      \verb{url}
+      \verb https://www.civo.com/blog/kubernetes-vs-docker-a-comprehensive-comparison#:~:text=Improved%20container%20orchestration%3A%20Kubernetes%20provides,demand%2C%20ensuring%20efficient%20resource%20utilization.
+      \endverb
+    \endentry
+    \entry{wiki:python}{online}{}
+      \field{sortinit}{w}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{label}{wiki}
+      \field{title}{Python (programming language)}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Python_(programming_language)
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Python_(programming_language)
+      \endverb
+    \endentry
+    \entry{doc:postgresql}{online}{}
+      \field{sortinit}{w}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{label}{wiki}
+      \field{title}{PostgreSQL -- About}
+      \verb{urlraw}
+      \verb https://www.postgresql.org/about/
+      \endverb
+      \verb{url}
+      \verb https://www.postgresql.org/about/
+      \endverb
+    \endentry
+    \entry{wiki:postgresql}{online}{}
+      \field{sortinit}{w}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{label}{wiki}
+      \field{title}{PostgreSQL}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/wiki/PostgreSQL
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/wiki/PostgreSQL
       \endverb
     \endentry
   \enddatalist

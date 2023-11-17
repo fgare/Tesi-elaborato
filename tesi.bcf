@@ -2358,6 +2358,16 @@
     <bcf:citekey order="6" intorder="2">site:container_vs_VM</bcf:citekey>
     <bcf:citekey order="7" intorder="1">site:container_vs_VM</bcf:citekey>
     <bcf:citekey order="8" intorder="1">site:container_vs_VM</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">book:lutz-python</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">wiki:python</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">doc:postgresql</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">wiki:postgresql</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">doc:docker-overview</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">doc:docker-overview</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">site:kube_better_docker</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">doc:docker-overview</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">doc:kube-nodes</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">doc:kube-pod</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
