@@ -71,6 +71,32 @@
       \verb https://kubernetes.io/docs/concepts/workloads/pods/
       \endverb
     \endentry
+    \entry{doc:kube-replicaset}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{ReplicaSet -- A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. As such, it is often used to guarantee the availability of a specified number of identical Pods}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+      \endverb
+    \endentry
+    \entry{doc:kube-service}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{Service -- In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/services-networking/service/#endpoints
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/services-networking/service/#endpoints
+      \endverb
+    \endentry
     \entry{book:lutz-python}{book}{}
       \name{author}{1}{}{%
         {{hash=f9b161dc8eaf25ea05f8bac50ac9596d}{%

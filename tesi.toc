@@ -18,7 +18,7 @@
 \contentsline {paragraph}{{Nodi}}{10}{paragraph*.5}%
 \contentsline {paragraph}{{Pod}}{10}{paragraph*.6}%
 \contentsline {paragraph}{{Deployment e Replicaset}}{10}{paragraph*.7}%
-\contentsline {paragraph}{{Service}}{10}{paragraph*.8}%
+\contentsline {paragraph}{{Service}}{11}{paragraph*.8}%
 \contentsline {subsection}{\numberline {3.2.5}{API REST}}{11}{subsection.3.2.5}%
 \contentsline {subsection}{\numberline {3.2.6}{JWT}}{11}{subsection.3.2.6}%
 \contentsline {chapter}{\numberline {4}{Implementazione}}{12}{chapter.4}%
