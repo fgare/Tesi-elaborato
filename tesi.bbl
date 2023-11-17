@@ -97,6 +97,32 @@
       \verb https://kubernetes.io/docs/concepts/services-networking/service/#endpoints
       \endverb
     \endentry
+    \entry{doc:apirest}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{What is REST}
+      \verb{urlraw}
+      \verb https://restfulapi.net/
+      \endverb
+      \verb{url}
+      \verb https://restfulapi.net/
+      \endverb
+    \endentry
+    \entry{doc:intro_jwt}{online}{}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{label}{doc}
+      \field{title}{Introduction to JSON Web Tokens}
+      \verb{urlraw}
+      \verb https://jwt.io/introduction
+      \endverb
+      \verb{url}
+      \verb https://jwt.io/introduction
+      \endverb
+    \endentry
     \entry{book:lutz-python}{book}{}
       \name{author}{1}{}{%
         {{hash=f9b161dc8eaf25ea05f8bac50ac9596d}{%

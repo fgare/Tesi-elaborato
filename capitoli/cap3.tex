@@ -38,17 +38,17 @@
 	Docker è una piattaforma aperta per lo sviluppo, la consegna e l'esecuzione di applicazioni all'interno di container.
 	All'interno di Docker sono definiti essenzialmente due oggetti principali:
 	
-	\begin{description}
-		\item[Immagini]
+	\begin{itemize}
+		\item \emph{Immagini}:
 			Un immagine è un template di sola lettura contenente le istruzioni per generare un nuovo container.
 			La generazione di nuove immagini è estremamente semplice ed avviene sulla base di istruzioni definite in un \emph{Dockerfile}, un file contenente le istruzioni per la generazione di un ambiente preconfigurato e pronto per l'esecuzione.
 			Ogni istruzione all'interno del Dockerfile corrisponde a un livello nella generazione dell'immagine, facilitando la condivisione e la distribuzione della stessa; quando un Dockerfile viene modificato e l'immagine è ricompilata, solo i livelli che hanno subito modifiche vengono ricompilati.
 			Si tratta quindi di strutture molto leggere, piccole e veloci se comparate ad altri modelli di virtualizzazione\cite{doc:docker-overview}.
 			
-		\item[Container]
+		\item \emph{Container}:
 			L'idea alla base dei container è già stata spiegata nella Sezione \ref{sec:depl_on_cont},
 			nel contesto di Docker i container assumono il ruolo di istanze eseguibili delle immagini\cite{doc:docker-overview}.
-	\end{description}
+	\end{itemize}
 	
 	Docker risulta ottimo per la gestione di container su un singolo host, offrendo strumenti per la limitazione e il monitoraggio delle risorse o il bilanciamento del carico (attraverso \emph{Docker Swarm} o \emph{Overlay Network Driver}), con caratteristiche che risultano tuttavia limitate rispetto ad altri orchestratori più avanzati\cite{site:kube_better_docker}.
 	
@@ -59,21 +59,21 @@
 	La necessità di orchestratori di container nasce in contesti di produzione, laddove c'è la necessità di gestire un gran numero di container ed assicurarsi che i servizi offerti siano sempre attivi\cite{doc:docker-overview}.
 
 	Alcune delle caratteristiche principali di Kubernetes sono:
-	\begin{description}
-		\item[Gestione delle risorse]
+	\begin{itemize}
+		\item \emph{Gestione delle risorse}:
 			Permette di porre limiti sulle risorse utilizzabili da un container (RAM, CPU, disco, etc.).
 		
-		\item[Bilanciamento del carico]
+		\item \emph{Bilanciamento del carico}:
 			\`E in grado di gestire più repliche di uno stesso container e gestire il traffico in ingresso distribuendolo uniformemente sulle istanze attive.
 			Fornisce inoltre la funzione di \emph{auto-scaling} che permette di variare il dinamicamente il numero di istanze di un container sulla base del traffico di rete.
 			
-		\item[Self-healing]
+		\item \emph{Self-healing}
 			Termina automaticamente i container che si sono bloccati e li sostituisce con nuove istanze degli stessi.
 			
-		\item[Configurazione dichiarativa]
+		\item \emph{Configurazione dichiarativa}:
 			\`E possibile lavorare in modalità DSC (\emph{Desired State Configuration}), in cui un cluster può essere configurato utilizzando dei file dichiarativi che descrivono lo stato in cui si vuole portare il sistema.
 			La fase di transizione dallo stato attuale del cluster allo stato desiderato è del tutto trasparente all'utente e non è in alcun modo modificabile, sarà Kubernetes a prendere tutte le decisioni in merito ed evolvere il sistema.
-	\end{description}
+	\end{itemize}
 	
 	Gli elementi chiave di Kubernetes sono \emph{Nodi}, \emph{Cluster}, \emph{Pod}, \emph{Deployment}, \emph{Service}.
 	Di seguito una breve presentazione per ognuno di essi:
@@ -110,7 +110,7 @@
 \subsection{API REST}
 	
 	Per API REST (o RESTful) si intende una \emph{Application Programming Interface} progettata secondi i principi dello stile architetturale REST (\emph{REpresentational State Transfer}).
-	I principi guida di REST sono definiti al fine di promuovere semplicità e scalabilità:
+	I principi guida di REST si articolano in sei punti e sono definiti con l'obiettivo di promuovere semplicità e scalabilità:
 	
 	\begin{enumerate}
 		\item \emph{Interfaccia uniforme}:
@@ -135,9 +135,20 @@
 			Oltre a risorse statiche, all'occorrenza può essere inviato anche del codice sorgente.
 	\end{enumerate}
 	
+	Per finire, REST non impone l'utilizzo di alcun protocollo di comunicazione, sebbene HTTP sia la scelta più comune\cite{doc:apirest}.
 	
-\subsection{JWT}
+\subsection{Token JWT}
 	
+	JWT (\emph{JSON Web Token}) è uno standard aperto che definisce una modalità compatta ed autocontenuta per trasmettere informazioni tra le parti coinvolte in una comunicazione come oggetti JSON.
+	I dati inviati sono firmati digitalmente grazie ad algoritmi a chiave segreta (HMAC) o a chiave pubblica-privata (RSA) e se ne può quindi verificare l'autenticità.
+	
+	I token JWT si compongono di tre parti separate tra loro da un punto ("."):
+	\emph{header}, \emph{payload} e \emph{firma}.
+	L'header contiene solitamente l'algoritmo usato per generare la firma e il tipo di token;
+	il payload contiene i \emph{claims}, ossia delle proprietà legate alle entità coinvolte;
+	il campo firma contiene l'\emph{impronta hash} generata dai dati delle due parti precedenti utilizzando l'algoritmo scelto.
+	
+	I vantaggi nell'utilizzo di JWT se confrontato con altri sistemi per la generazione di web token risiedono nella compattezza dei pacchetti, nella flessibilità nell'uso di diversi algoritmi di firma e nella diffusione e semplicità di manipolazione di oggetti JSON\cite{doc:intro_jwt}.
 	
 	
 	

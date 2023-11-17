@@ -20,9 +20,15 @@
 \contentsline {paragraph}{{Deployment e Replicaset}}{10}{paragraph*.7}%
 \contentsline {paragraph}{{Service}}{11}{paragraph*.8}%
 \contentsline {subsection}{\numberline {3.2.5}{API REST}}{11}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}{JWT}}{11}{subsection.3.2.6}%
-\contentsline {chapter}{\numberline {4}{Implementazione}}{12}{chapter.4}%
-\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{13}{chapter.5}%
-\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{14}{chapter.6}%
-\contentsline {chapter}{{Bibliografia}}{16}{chapter*.9}%
+\contentsline {subsection}{\numberline {3.2.6}{Token JWT}}{12}{subsection.3.2.6}%
+\contentsline {chapter}{\numberline {4}{Implementazione}}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}{Autenticazione e autorizzazione}}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}{Database}}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}{Esecuzione delle richieste}}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}{Creazione di un ordine}}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}{Evoluzione dello stato di un ordine}}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.6}{Implementazione dei microservizi}}{16}{section.4.6}%
+\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{18}{chapter.6}%
+\contentsline {chapter}{{Bibliografia}}{20}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

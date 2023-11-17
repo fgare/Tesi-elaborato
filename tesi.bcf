@@ -2370,6 +2370,8 @@
     <bcf:citekey order="17" intorder="1">doc:kube-pod</bcf:citekey>
     <bcf:citekey order="18" intorder="1">doc:kube-replicaset</bcf:citekey>
     <bcf:citekey order="19" intorder="1">doc:kube-service</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">doc:apirest</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">doc:intro_jwt</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
