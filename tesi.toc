@@ -25,10 +25,9 @@
 \contentsline {section}{\numberline {4.1}{Autenticazione e autorizzazione}}{13}{section.4.1}%
 \contentsline {section}{\numberline {4.2}{Database}}{14}{section.4.2}%
 \contentsline {section}{\numberline {4.3}{Esecuzione delle richieste}}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}{Creazione di un ordine}}{16}{section.4.4}%
-\contentsline {section}{\numberline {4.5}{Evoluzione dello stato di un ordine}}{16}{section.4.5}%
-\contentsline {section}{\numberline {4.6}{Implementazione dei microservizi}}{16}{section.4.6}%
-\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{17}{chapter.5}%
-\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{18}{chapter.6}%
-\contentsline {chapter}{{Bibliografia}}{20}{chapter*.10}%
+\contentsline {section}{\numberline {4.4}{Evoluzione dello stato di un ordine}}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}{Implementazione dei microservizi}}{18}{section.4.5}%
+\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{20}{chapter.6}%
+\contentsline {chapter}{{Bibliografia}}{22}{chapter*.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,15 @@
+[
+    {
+        "barcode": 3,
+        "name": "whole milk",
+        "quantity": 2
+    },
+    {
+        "barcode": 74,
+        "name": "oil",
+        "quantity": 1
+    },
+    {
+        ...
+    }
+]

@@ -10,11 +10,11 @@
 	
 	\smallskip
 	L'applicazione sviluppata in modo monolitico espone alcune chiamate API REST, che le permettono di ricevere richieste ed inviare risposte agli applicativi lato client attraverso il protocollo HTTP .
-	Lo scambio di informazioni tra client e server avviene scambiando messaggi in formato JSON ed è protetto con algoritmi di crittografia e metodi di autenticazione tramite token, il tutto per garantire sicurezza e privatezza dei dati scambiati.
+	La condivisione di informazioni tra client e server avviene attraverso lo scambio di messaggi in formato JSON ed è protetto con algoritmi di crittografia e metodi di autenticazione tramite token, il tutto per garantire la sicurezza e la privatezza dei dati scambiati.
 	Per la conservazione dei dati persistenti (quali informazioni sugli utenti, sulla merce in magazzino o sugli ordini) si utilizza infine un database PostgreSQL.
 	
 	\smallskip
-	L'applicazione a microservizi nasce dall'applicazione monolitica e la scompone in un numero di unità pari al numero di servizi complessivamente offerti, nel contesto applicativo ciascun modulo si riduce così ad esporre una singola chiamata API, occupandosi di un singolo aspetto tra i passi successivi che portano dalla scelta dei prodotti fino alla spedizione dell'ordine.
+	Il sistema a microservizi nasce dall'applicazione monolitica e la scompone in un numero di unità pari ai servizi complessivamente offerti, nel contesto applicativo ciascun modulo si riduce così ad esporre una singola chiamata API, occupandosi di un unico aspetto tra i passi successivi che portano dalla scelta dei prodotti fino alla spedizione dell'ordine.
 	Il sistema si compone in questo caso di un cluster di server eseguiti all'interno di container e, in un contesto più ampio, di un cluster Kubernetes.
 
 
@@ -30,7 +30,7 @@
 \subsection{PostgreSQL}
 	
 	PostgreSQL è un Database Management System (DBMS) di tipo relazionale e ad oggetti, molto potente ed open source.
-	Si tratta di una valida alternativa ad altri progetti sia liberi che con licenza ed è divenuto celebre nel tempo per alcuni suoi punti di forza quali la programmabilità, permettendo un incremento nel livello di astrazione, affidabilità e prestazioni raggiunte\cite{doc:postgresql, wiki:postgresql}.
+	Si tratta di una valida alternativa ad altri progetti sia liberi che con licenza, ed è divenuto celebre nel tempo per alcuni suoi punti di forza, primo fra tutti la programmabilità, che permette un incremento nel livello di astrazione, di affidabilità e prestazioni\cite{doc:postgresql, wiki:postgresql}.
 
 
 \subsection{Docker}
@@ -40,7 +40,7 @@
 	
 	\begin{itemize}
 		\item \emph{Immagini}:
-			Un immagine è un template di sola lettura contenente le istruzioni per generare un nuovo container.
+			Un immagine è un template contenente le istruzioni per generare un nuovo container.
 			La generazione di nuove immagini è estremamente semplice ed avviene sulla base di istruzioni definite in un \emph{Dockerfile}, un file contenente le istruzioni per la generazione di un ambiente preconfigurato e pronto per l'esecuzione.
 			Ogni istruzione all'interno del Dockerfile corrisponde a un livello nella generazione dell'immagine, facilitando la condivisione e la distribuzione della stessa; quando un Dockerfile viene modificato e l'immagine è ricompilata, solo i livelli che hanno subito modifiche vengono ricompilati.
 			Si tratta quindi di strutture molto leggere, piccole e veloci se comparate ad altri modelli di virtualizzazione\cite{doc:docker-overview}.
@@ -55,8 +55,8 @@
 	
 \subsection{Kubernetes}
 	
-	Kubernetes è una piattaforma open source per l'automazione della distribuzione, scalabilità e gestione di applicazioni eseguite su container, azioni che nell'insieme prendono il nome di \emph{orchestrazione}.
-	La necessità di orchestratori di container nasce in contesti di produzione, laddove c'è la necessità di gestire un gran numero di container ed assicurarsi che i servizi offerti siano sempre attivi\cite{doc:docker-overview}.
+	Kubernetes è una piattaforma open source per l'automazione della distribuzione, della scalabilità e della gestione di applicazioni eseguite su container, azioni che nell'insieme prendono il nome di \emph{orchestrazione}.
+	La necessità di orchestratori di container nasce in contesti di produzione, laddove c'è la necessità di gestire un gran numero di container ed assicurare che i servizi offerti siano sempre attivi\cite{doc:docker-overview}.
 
 	Alcune delle caratteristiche principali di Kubernetes sono:
 	\begin{itemize}
@@ -65,14 +65,14 @@
 		
 		\item \emph{Bilanciamento del carico}:
 			\`E in grado di gestire più repliche di uno stesso container e gestire il traffico in ingresso distribuendolo uniformemente sulle istanze attive.
-			Fornisce inoltre la funzione di \emph{auto-scaling} che permette di variare il dinamicamente il numero di istanze di un container sulla base del traffico di rete.
+			Fornisce inoltre la funzione di \emph{auto-scaling} che permette di variare dinamicamente il numero di istanze di un container sulla base del traffico di rete.
 			
 		\item \emph{Self-healing}
 			Termina automaticamente i container che si sono bloccati e li sostituisce con nuove istanze degli stessi.
 			
 		\item \emph{Configurazione dichiarativa}:
 			\`E possibile lavorare in modalità DSC (\emph{Desired State Configuration}), in cui un cluster può essere configurato utilizzando dei file dichiarativi che descrivono lo stato in cui si vuole portare il sistema.
-			La fase di transizione dallo stato attuale del cluster allo stato desiderato è del tutto trasparente all'utente e non è in alcun modo modificabile, sarà Kubernetes a prendere tutte le decisioni in merito ed evolvere il sistema.
+			La fase di transizione dallo stato attuale del cluster allo stato desiderato è del tutto trasparente all'utente e non è in alcun modo modificabile, sarà Kubernetes a prendere tutte le decisioni in merito  evolvendo il sistema.
 	\end{itemize}
 	
 	Gli elementi chiave di Kubernetes sono \emph{Nodi}, \emph{Cluster}, \emph{Pod}, \emph{Deployment}, \emph{Service}.
@@ -85,26 +85,26 @@
 	
 \paragraph{Nodi}
 	I nodi possono essere macchine fisiche o virtuali e rappresentano i punti tra i quali è suddiviso il carico di lavoro.
-	Ne sono definiti due tipi: i \emph{control plane node} e i \emph{worker node}; i primi gestiscono l'interazione con il cluster e si occupano di distribuire uniformemente il carico di lavoro tra i \emph{worker node}; i secondi sono nodi operativi, sui quali vengono istanziati i \emph{pod}\cite{doc:kube-nodes}.
+	Ne esistono due tipi: i \emph{control plane node} e i \emph{worker node}; i primi gestiscono l'interazione con il cluster e si occupano di distribuire uniformemente il carico di lavoro tra i \emph{worker node}; i secondi sono nodi operativi, sui quali vengono istanziati i \emph{pod}\cite{doc:kube-nodes}.
 
 
 \paragraph{Pod}
 	Un Pod è la più piccola unità definibile con Kubernetes e corrisponde a un gruppo di uno o più container che condividono spazio di archiviazione e risorse di rete.
-	Ogni pod modella di fatto un host logico\cite{doc:kube-pod}.
+	Ogni pod genera di fatto un host logico\cite{doc:kube-pod}.
 
 
 \paragraph{Deployment e Replicaset}
-	Un \emph{Deployment} è un oggetto Kubernetes che permette di dichiarare come le applicazioni al suo interno debbano essere gestite, distribuite e quante risorse gli si debba dedicare.
+	Un \emph{Deployment} è un oggetto Kubernetes che permette di dichiarare come le applicazioni al suo interno debbano essere gestite, distribuite e quante risorse potrà impegnare.
 	All'interno del deployment viene solitamente definito un oggetto \emph{ReplicaSet}, il quale racchiude un insieme di pod che condividono una configurazione comune.
 	La risorsa \emph{ReplicaSet} si occupa di mantenere il numero di repliche desiderato per ciascun pod, istanziandone di nuovi o distruggendo quelli bloccati.
 	Un Deployment è un concetto di più alto livello che permette di gestire i ReplicaSet e fornire aggiornamenti sulla configurazione dei pod in maniera dichiarativa\cite{doc:kube-replicaset};
 	è ad esempio possibile specificare le immagini da utilizzare per la generazione di container, i numeri di porta da esporre, etc.
 
 \paragraph{Service}
-	Un ogetto \emph{Service} rappresenta un'astrazione al fine di esporre un gruppo di pod sulla rete.
+	Un ogetto \emph{Service} definisce uno strumento utile ad esporre un gruppo di pod sulla rete.
 	La necessità di definire un tale oggetto nasce dalla natura effimera dei pod, che come precedentemente spiegato possono essere distrutti e rigenerati;
-	da ciò consegue che non è possibile conoscere quali unità sono attive e funzionanti in un dato momento.
-	La configurazione di un service contiene il nome del service, un selettore per identificare i pod raggiungibili e i numeri di porta accessibili dall'esterno, generando di fatto un'astrazione dagli indirizzi IP interni di un insieme di pod\cite{doc:kube-service}.
+	da ciò ne consegue che non è possibile conoscere quali unità sono attive e funzionanti in un dato momento.
+	La configurazione di un service contiene il nome del service stesso, un selettore per identificare i pod raggiungibili e i numeri di porta accessibili dall'esterno, generando di fatto un'astrazione dagli indirizzi IP interni di un insieme di pod\cite{doc:kube-service}.
 	
 	
 \subsection{API REST}
@@ -114,8 +114,8 @@
 	
 	\begin{enumerate}
 		\item \emph{Interfaccia uniforme}:
-			Ogni risorsa trasferita dal server deve rispettare delle condizioni di generalità, come: identificazione univoca della risorsa;
-			manipolazione della risorsa tramite rappresentazioni (le risorse devono essere rappresentate in un formato standard come JSON o XML);
+			Ogni risorsa trasferita dal server deve rispettare delle condizioni di generalità: identificazione univoca della risorsa,
+			manipolazione della risorsa tramite rappresentazioni (le risorse devono essere rappresentate in un formato standard come JSON o XML),
 			autodescrizione delle risorse.
 		
 		\item \emph{Architettura client-server}:
@@ -128,7 +128,7 @@
 			Ogni risorsa deve specificare se può essere memorizzata e riutilizzata in seguito come risposta a una richiesta equivalente.
 		
 		\item \emph{Sistema a più livelli}:
-			\`E possibile definire una struttura gerarchica tra livelli, così che all'arrivo di una richiesta il server principale può inoltrare quest'ultima ad altri server di livello inferiore.
+			\`E possibile definire una struttura gerarchica tra livelli, così che all'arrivo di una richiesta il server principale possa inoltrare quest'ultima ad altri server di livello inferiore.
 			Solo il livello più esterno deve però essere visibile all'utente.
 		
 		\item \emph{Codice on demand}:
@@ -139,8 +139,8 @@
 	
 \subsection{Token JWT}
 	
-	JWT (\emph{JSON Web Token}) è uno standard aperto che definisce una modalità compatta ed autocontenuta per trasmettere informazioni tra le parti coinvolte in una comunicazione come oggetti JSON.
-	I dati inviati sono firmati digitalmente grazie ad algoritmi a chiave segreta (HMAC) o a chiave pubblica-privata (RSA) e se ne può quindi verificare l'autenticità.
+	JWT (\emph{JSON Web Token}) è uno standard aperto che definisce una modalità compatta ed autocontenuta adatta a trasmettere informazioni tra le parti coinvolte in una comunicazione come oggetti JSON.
+	I dati inviati sono firmati digitalmente grazie ad algoritmi a chiave segreta (HMAC) o a chiave pubblica-privata (RSA) che permettono di verificarne facilmente l'autenticità.
 	
 	I token JWT si compongono di tre parti separate tra loro da un punto ("."):
 	\emph{header}, \emph{payload} e \emph{firma}.
@@ -148,7 +148,7 @@
 	il payload contiene i \emph{claims}, ossia delle proprietà legate alle entità coinvolte;
 	il campo firma contiene l'\emph{impronta hash} generata dai dati delle due parti precedenti utilizzando l'algoritmo scelto.
 	
-	I vantaggi nell'utilizzo di JWT se confrontato con altri sistemi per la generazione di web token risiedono nella compattezza dei pacchetti, nella flessibilità nell'uso di diversi algoritmi di firma e nella diffusione e semplicità di manipolazione di oggetti JSON\cite{doc:intro_jwt}.
+	I vantaggi nell'utilizzo di JWT, se confrontato con altri sistemi per la generazione di web token, risiedono nella compattezza dei pacchetti, nella flessibilità nell'uso di diversi algoritmi di firma e nella diffusione e semplicità di manipolazione di oggetti JSON\cite{doc:intro_jwt}.
 	
 	
 	
