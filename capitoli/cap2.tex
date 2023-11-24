@@ -1,7 +1,9 @@
 \chapter{Stato dell'arte}
 
-	In ambito di sviluppo e deployment di applicazioni distribuite si distinguono diversi metodi; descriveremo nel corso di questo capitolo pro e contro di ogni approccio.
+	In ambito di sviluppo e deployment di applicazioni distribuite si distinguono diversi metodi.
+	Nel corso di questo capitolo verranno analizzati pro e contro di ogni approccio.
 	
+
 
 \section{Architettura monolitica}
 
@@ -33,11 +35,14 @@
 		\caption{Principio di funzionamento di un'applicazione monolitica e una a microservizi\cite{site:archComparison} }
 	\end{figure}
 	
+	
+	
 \section{Deployment tradizionale}
 
 	La metodologia tradizionale di deployment prevede l'esecuzione delle applicazioni direttamente sul server fisico.
 	Sebbene semplice ed immediato questo modo di procedere non è ottimale, non permette infatti di scalare l'applicazione ponendo dei limiti sull'utilizzo di risorse (CPU, RAM, disco,\dots) e si corre il rischio che una seconda applicazione non riesca a garantire le prestazioni desiderate.
 	Si potrebbe cercare un'alternativa a questo problema eseguendo ogni applicazione su un server fisico distinto, ma anche una tale soluzione non è adatta a un contesto reale risultando molto costosa e portando a un sottoutilizzo delle risorse complessive\cite{doc:kube}.
+
 
 
 \section{Deployment su macchine virtuali}
@@ -55,6 +60,7 @@
 	
 	Contrariamente, i principali svantaggi delle macchine virtuali riguardano la ridotta velocità di generazione e distribuzione delle stesse e il maggiore spazio di archiviazione richiesto:
 	trattandosi di \emph{immagini} di un sistema indipendente possono infatti richiedere diverso tempo per essere generate e configurate, l'affiancamento di diverse macchine virtuali porta inoltre alla duplicazione del sistema operativo installato su di esse, con un conseguente utilizzo di spazio di archiviazione.
+
 
 
 \section{Deployment su container}

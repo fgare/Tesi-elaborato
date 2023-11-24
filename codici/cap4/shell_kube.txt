@@ -1,0 +1,36 @@
+PS C:\Users\...> kubectl get deployment
+NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
+authentication-depl   1/1     1            1           7s
+customers-depl        1/1     1            1           7s
+orders-depl           1/1     1            1           7s
+payments-depl         1/1     1            1           7s
+shippings-depl        1/1     1            1           7s
+warehouse-depl        1/1     1            1           7s
+
+PS C:\Users\...> kubectl get service
+NAME                     TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+authentication-service   LoadBalancer   10.96.111.66     localhost     5000:31843/TCP   34s
+customers-service        LoadBalancer   10.102.99.111    localhost     5005:30826/TCP   34s
+kubernetes               ClusterIP      10.96.0.1        <none>        443/TCP          8h
+orders-service           LoadBalancer   10.100.51.68     localhost     5002:30142/TCP   34s
+payments-service         LoadBalancer   10.108.26.17     localhost     5003:32284/TCP   34s
+shippings-service        LoadBalancer   10.111.29.183    localhost     5004:31344/TCP   34s
+warehouse-service        LoadBalancer   10.108.154.128   localhost     5001:32499/TCP   34s
+
+PS C:\Users\...> kubectl get pods
+NAME                                   READY   STATUS    RESTARTS   AGE
+authentication-depl-7d87856d8d-p98bz   1/1     Running   0          63s
+customers-depl-cc9c9bdfb-dpmw5         1/1     Running   0          63s
+orders-depl-5896b9c76f-5fwkk           1/1     Running   0          63s
+payments-depl-55746f8454-7zdzk         1/1     Running   0          63s
+shippings-depl-59f766cf5-lklxs         1/1     Running   0          63s
+warehouse-depl-86b6988d74-pxwlg        1/1     Running   0          63s
+
+PS C:\Users\...> kubectl get replicaset
+NAME                             DESIRED   CURRENT   READY   AGE
+authentication-depl-7d87856d8d   1         1         1       88s
+customers-depl-cc9c9bdfb         1         1         1       88s
+orders-depl-5896b9c76f           1         1         1       88s
+payments-depl-55746f8454         1         1         1       88s
+shippings-depl-59f766cf5         1         1         1       88s
+warehouse-depl-86b6988d74        1         1         1       88s

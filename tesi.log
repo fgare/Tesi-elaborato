@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  18 NOV 2023 23:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  24 NOV 2023 19:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -987,7 +987,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box101
 \enit@count@id=\count435
 \enitdp@description=\count436
-))
+)
 (c:/texlive/2022/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
 
@@ -1115,6 +1115,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 runsystem(if not exist _minted-tesi mkdir _minted-tesi)...executed.
 
+
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count467
+\lst@gtempboxa=\box111
+\lst@token=\toks28
+\lst@length=\count468
+\lst@currlwidth=\dimen264
+\lst@column=\count469
+\lst@pos=\count470
+\lst@lostspace=\dimen265
+\lst@width=\dimen266
+\lst@newlines=\count471
+\lst@lineno=\count472
+\lst@maxwidth=\dimen267
+
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count473
+\lst@skipnumbers=\count474
+\lst@framebox=\box112
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > te
@@ -1154,17 +1180,17 @@ LaTeX Info: Redefining \it@ccap on input line 22.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count467
-\scratchdimen=\dimen264
-\scratchbox=\box111
-\nofMPsegments=\count468
-\nofMParguments=\count469
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count470
-\MPscratchDim=\dimen265
-\MPnumerator=\count471
-\makeMPintoPDFobject=\count472
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count475
+\scratchdimen=\dimen268
+\scratchbox=\box113
+\nofMPsegments=\count476
+\nofMParguments=\count477
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count478
+\MPscratchDim=\dimen269
+\MPnumerator=\count479
+\makeMPintoPDFobject=\count480
+\everyMPtoPDFconversion=\toks30
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1174,7 +1200,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\big@size=\dimen266
+\big@size=\dimen270
 LaTeX Info: Redefining \microtypecontext on input line 22.
 Package microtype Info: Applying patch `item' on input line 22.
 Package microtype Info: Applying patch `toc' on input line 22.
@@ -1197,6 +1223,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 22.
  (./tesi.out)
@@ -1217,7 +1244,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count473
+\BKM@id=\count481
 ))
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1270,6 +1297,7 @@ Package biblatex Info: Reference segment=0 on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\c@lstlisting=\count482
 \openout2 = `frontespizio/titlepage.aux'.
 
 (./frontespizio/titlepage.tex
@@ -1385,7 +1413,7 @@ Capitolo 1.
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 
-27.
+14.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 ) [3
@@ -1394,20 +1422,20 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 (./capitoli/cap2.tex
 Capitolo 2.
 [4]
-<img/cap2/Monolithic_architecture.png, id=93, 444.66125pt x 386.94562pt>
+<img/cap2/Monolithic_architecture.png, id=95, 444.66125pt x 386.94562pt>
 File: img/cap2/Monolithic_architecture.png Graphic file (type png)
 <use img/cap2/Monolithic_architecture.png>
 Package pdftex.def Info: img/cap2/Monolithic_architecture.png  used on input li
-ne 27.
+ne 28.
 (pdftex.def)             Requested size: 209.12683pt x 181.98254pt.
-<img/cap2/Microservice_architecture.png, id=94, 444.66125pt x 320.69812pt>
+<img/cap2/Microservice_architecture.png, id=96, 444.66125pt x 320.69812pt>
 File: img/cap2/Microservice_architecture.png Graphic file (type png)
 <use img/cap2/Microservice_architecture.png>
 Package pdftex.def Info: img/cap2/Microservice_architecture.png  used on input 
-line 31.
+line 32.
 (pdftex.def)             Requested size: 209.12683pt x 150.826pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 25--33
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 26--34
 [][] [] 
  []
 
@@ -1419,12 +1447,12 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [6 <./img/cap2/Monolithic_architecture.png (PNG copy)> <./img/cap2/Microservic
 e_architecture.png (PNG copy)>]
-<img/cap2/Diagram_Containers_VirtualMachines.png, id=110, 3854.4pt x 1336.995pt
+<img/cap2/Diagram_Containers_VirtualMachines.png, id=112, 3854.4pt x 1336.995pt
 >
 File: img/cap2/Diagram_Containers_VirtualMachines.png Graphic file (type png)
 <use img/cap2/Diagram_Containers_VirtualMachines.png>
 Package pdftex.def Info: img/cap2/Diagram_Containers_VirtualMachines.png  used 
-on input line 70.
+on input line 71.
 (pdftex.def)             Requested size: 418.25368pt x 145.07062pt.
 ) (./capitoli/cap3.tex
 Capitolo 3.
@@ -1455,7 +1483,7 @@ ve_quantity_remaining_check\T1/pplj/m/n/10.95 (-20) ,
  []
 
 [14]
-<img/cap4/ER-Diagram.png, id=202, 554.3109pt x 282.5757pt>
+<img/cap4/ER-Diagram.png, id=204, 554.3109pt x 282.5757pt>
 File: img/cap4/ER-Diagram.png Graphic file (type png)
 <use img/cap4/ER-Diagram.png>
 Package pdftex.def Info: img/cap4/ER-Diagram.png  used on input line 108.
@@ -1464,16 +1492,20 @@ Package pdftex.def Info: img/cap4/ER-Diagram.png  used on input line 108.
 
 pdfTeX warning: pdflatex.exe (file ./img/cap4/statiOrdine.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<img/cap4/statiOrdine.pdf, id=211, 645.37106pt x 234.8775pt>
+<img/cap4/statiOrdine.pdf, id=213, 645.37106pt x 234.8775pt>
 File: img/cap4/statiOrdine.pdf Graphic file (type pdf)
 <use img/cap4/statiOrdine.pdf>
 Package pdftex.def Info: img/cap4/statiOrdine.pdf  used on input line 145.
 (pdftex.def)             Requested size: 376.42575pt x 136.99959pt.
 (./_minted-tesi/default.pygstyle)
-(./_minted-tesi/2D3A5A98D3928EC50E791FFE5D6ED295DC6580FA9BB371E66C5CF9F2FF11E1D
-C.pygtex
+(./_minted-tesi/63A6F15C6143FB607A17A7E9F8144562FAECA8B28249B61DD977C2FB4301F61
+2.pygtex
 LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
 (Font)              scaled to size 9.30756pt on input line 4.
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 14.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 9.30756pt on input line 14.
 )
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
 t line 156.
@@ -1481,18 +1513,66 @@ t line 156.
 
 pdfTeX warning: pdflatex.exe (file ./img/cap4/microservizi.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<img/cap4/microservizi.pdf, id=239, 417.47968pt x 278.96219pt>
+<img/cap4/microservizi.pdf, id=242, 417.47968pt x 278.96219pt>
 File: img/cap4/microservizi.pdf Graphic file (type pdf)
 <use img/cap4/microservizi.pdf>
 Package pdftex.def Info: img/cap4/microservizi.pdf  used on input line 187.
 (pdftex.def)             Requested size: 312.9752pt x 209.12683pt.
-) (./capitoli/cap5.tex
-Capitolo 5.
-[18 <./img/cap4/microservizi.pdf>]) (./capitoli/cap6.tex
-Capitolo 6.
-[19
+[18 <./img/cap4/microservizi.pdf>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 232.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 6.80005pt on input line 232.
+ (./codici/cap4/shell_kube.txt)
+Overfull \hbox (24.73988pt too wide) in paragraph at lines 239--241
+[]\T1/pplj/m/n/10.95 (-20) La re-gi-stra-zio-ne di nuo-vi clien-ti av-vie-ne at
+-tra-ver-so un'A-PI sul per-cor-so \T1/fvm/m/n/10.95 /registerCustomer
+ []
 
-]) [20
+[19]) (./capitoli/cap5.tex
+Capitolo 5.
+[20] [21
+
+]
+<img/cap5/monolithic/boxplot.png, id=330, 462.528pt x 346.896pt>
+File: img/cap5/monolithic/boxplot.png Graphic file (type png)
+<use img/cap5/monolithic/boxplot.png>
+Package pdftex.def Info: img/cap5/monolithic/boxplot.png  used on input line 89
+.
+(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+<img/cap5/monolithic/istogramma.png, id=331, 462.528pt x 346.896pt>
+File: img/cap5/monolithic/istogramma.png Graphic file (type png)
+<use img/cap5/monolithic/istogramma.png>
+Package pdftex.def Info: img/cap5/monolithic/istogramma.png  used on input line
+ 93.
+(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 87--95
+[][] [] 
+ []
+
+<img/cap5/microservices/boxplot.png, id=332, 462.528pt x 346.896pt>
+File: img/cap5/microservices/boxplot.png Graphic file (type png)
+<use img/cap5/microservices/boxplot.png>
+Package pdftex.def Info: img/cap5/microservices/boxplot.png  used on input line
+ 102.
+(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+<img/cap5/microservices/istogramma.png, id=333, 462.528pt x 346.896pt>
+File: img/cap5/microservices/istogramma.png Graphic file (type png)
+<use img/cap5/microservices/istogramma.png>
+Package pdftex.def Info: img/cap5/microservices/istogramma.png  used on input l
+ine 106.
+(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 100--108
+[][] [] 
+ []
+
+) (./capitoli/cap6.tex
+Capitolo 6.
+[22] [23 <./img/cap5/monolithic/boxplot.png> <./img/cap5/monolithic/istogramma.
+png> <./img/cap5/microservices/boxplot.png> <./img/cap5/microservices/istogramm
+a.png>]) [24
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 37
@@ -1501,7 +1581,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 37
 \tf@lof=\write8
 \openout8 = `tesi.lof'.
 
- [21
+ [25
 
 ]
 Overfull \hbox (8.9834pt too wide) in paragraph at lines 38--38
@@ -1509,7 +1589,7 @@ Overfull \hbox (8.9834pt too wide) in paragraph at lines 38--38
 % 20provides ,[] demand %
  []
 
-[22
+[26
 
 ] (./tesi.aux (./frontespizio/titlepage.aux))
 Package rerunfilecheck Info: File `tesi.out' has not changed.
@@ -1519,25 +1599,26 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31871 strings out of 476855
- 617365 string characters out of 5822299
- 1596703 words of memory out of 5000000
- 51990 multiletter control sequences out of 15000+600000
- 550365 words of font info for 461 fonts, out of 8000000 for 9000
+ 33592 strings out of 476855
+ 641093 string characters out of 5822299
+ 1711964 words of memory out of 5000000
+ 53615 multiletter control sequences out of 15000+600000
+ 554207 words of font info for 478 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 108i,23n,106p,10599b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,107p,10599b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
 f-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist
 /fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
 lic/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmb8a
 .pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive
-/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (22 pages, 542865 bytes).
+/2022/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb><c:/texlive/2022/texmf-dis
+t/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/u
+rw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/upl
+ri8a.pfb>
+Output written on tesi.pdf (26 pages, 612671 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 500000)
- 82148 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 85248 words of extra memory for PDF output out of 89155 (max. 10000000)
 

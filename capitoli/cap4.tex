@@ -4,7 +4,7 @@
 	Nel corso di questo capitolo verrà presentata dapprima l'applicazione monolitica, analizzandone i servizi offerti, la struttura interna e le scelte progettuali compiute;
 	in seguito si passerà all'analisi del sistema a microservizi, concentrandosi sul processo di decomposizione del problema generale.
 	
-	L'applicazione espone complessivamente 5 servizi
+	L'applicazione si compone complessivamente 5 servizi
 	
 	\begin{enumerate}
 		\item \emph{Autenticazione}:
@@ -119,7 +119,7 @@
 		\item Vengono verificati la validità del token fornito e i permessi dell'utente ad effettuare la richiesta, se uno di questi due controlli fallisce viene inviata direttamente una risposta di errore.
 		
 		\item La gestione della richiesta viene demandata alla classe specifica, che interroga il database se necessario e predispone un oggetto JSON di risposta.
-		Ogni classe dispone dei permessi in scrittura sul database, si è compiuta questa scelta al fine di evitare i colli di bottiglia tipici di una gestione centralizzata.
+		Ogni classe dispone dei permessi in scrittura sul database; si è compiuta questa scelta al fine di evitare i colli di bottiglia tipici di una gestione centralizzata.
 		
 		\item Viene generata la risposta, restituendo la risorsa richiesta in formato JSON insieme a un codice di stato (\emph{status code}).
 		Il codice di stato è utile per identificare l'esito positivo o negativo della richiesta, inserendo eventualmente l'errore all'interno di una macro categoria.
@@ -137,7 +137,7 @@
 		\item \emph{Cancelled}: Non è possibile soddisfare l'ordine, almeno un prodotto è presente a magazzino in quantità insufficiente.
 		\item \emph{Paid}: \`E stato ricevuto il pagamento.
 		\item \emph{Refused}: Il pagamento è stato rifiutato.
-		\item \emph{OnDelivery}: L'ordine è stato spedito.
+		\item \emph{OnDelivery}: L'ordine è stato evaso e gli articoli spediti.
 	\end{itemize}
 	
 	\begin{figure}[tbp]
@@ -152,20 +152,20 @@
 	la struttura deve essere quella riportata nel Codice \ref{lst:json_newOrder}.
 	
 	\begin{listing}[tb]
-		\inputminted{json}{codici/cap4/nuovoOrdine.json}
+		\inputminted[encoding=utf8]{json}{codici/cap4/nuovoOrdine.json}
 		\caption{Struttura del corpo della richiesta per la creazione di un nuovo ordine}
 		\label{lst:json_newOrder}
 	\end{listing}
 	
 	Non è necessario specificare l'identificativo dell'utente, in quanto questa informazione, insieme al tipo di utente, è già presente all'interno del token ed è recuperata automaticamente.
-	I passaggi successivi riguardano:
+	I passaggi successivi sono:
 	
 	\begin{enumerate}
-		\item Viene registrato il nuovo ordine nella tabella \emph{Orders} del database, il quale si occupa di assegnare un id univoco.
-		Lo stato dell'ordine è impostato su \emph{created} finché non ha l'id assegnato e viene in seguito modificato in \emph{created}.
+		\item Viene registrato il nuovo ordine nella tabella \emph{Orders} del database, il quale si occupa di assegnare un ID univoco.
+		Lo stato dell'ordine è impostato su \emph{created} finché non ha l'ID assegnato e viene in seguito modificato in \emph{created}.
 		
 		\item Vengono prelevati i prodotti ordinati dal magazzino, modificando le quantità residue nella tabella \emph{Articles}.
-		Se si tenta di rimuovere un numero di prodotti superiore a quelli residui presenti in magazzino viene generata un'eccezione per la violazione del \emph{vincolo check} spiegato alla Sezione \ref{sec:quantityCheck};
+		Se si tenta di rimuovere un numero di prodotti superiore a quelli presenti in magazzino viene generata un'eccezione per la violazione del \emph{vincolo check} spiegato alla Sezione \ref{sec:quantityCheck};
 		il database esegue il rollback e lo stato dell'ordine è impostato su \emph{Cancelled}.
 		
 		\item Vengono registrati tutti i prodotti ordinati con la quantità associata nella tabella \emph{OrderItems} del database.
@@ -173,13 +173,13 @@
 		\item Viene calcolato il prezzo finale dell'ordine e memorizzato nella tabella \emph{Orders}.
 	\end{enumerate}
 	
-	Se tutto va a buon fine all'utente viene comunicata la somma da pagare e lo stato dell'ordine è modificato in \emph{Confirmed}.
+	Se tutto va a buon fine l'ordine è modificato in \emph{Confirmed} e all'utente viene comunicata la somma da pagare.
 	
 
 	
 \section{Implementazione dei microservizi}
 
-	L'applicazione a microservizi nasce dal codice dell'applicazione monolitica, ma lo riorganizza in unità indipendenti sulla base dei diversi servizi offerti.
+	L'applicazione a microservizi nasce dal codice dell'applicazione monolitica riorganizzandolo in unità indipendenti sulla base dei diversi servizi offerti.
 	Al fine di evitare colli di bottiglia dovuti alla presenza di un singolo punto d'ingresso per le richieste, ogni microservizio espone delle proprie API.
 	
 	\begin{figure}[tbp]
@@ -189,7 +189,8 @@
 		\label{fig:microservizi}
 	\end{figure}
 	
-	Sono stati sviluppati sei microservizi, uno schema generale del sistema è mostrato in Figura \ref{fig:microservizi}:
+	Sono stati sviluppati sei microservizi, lo schema generale del sistema è mostrato in Figura \ref{fig:microservizi}.
+	Di seguito l'elenco dei microservizi:
 	
 	\begin{itemize}
 		\item \emph{Authentication}:
@@ -214,32 +215,31 @@
 		\item \emph{Warehouse}:
 			Gestisce il magazzino.
 			Ha una propria API attiva sulla porta 5001 al percorso \texttt{productsList}, con metodo GET per richiedere la lista dei prodotti presenti in magazzino, POST per caricare nuovi prodotti.
-		
 	\end{itemize}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	Sempre al fine di evitare colli di bottiglia si è preferito lasciare il DBMS in esecuzione locale, senza creare un microservizio dedicato che avrebbe rappresentato un ulteriore grado di complessità.
 	
+	In Listing \ref{lst:esecKube} è riportato lo stato di Kubernetes con l'applicazione a microservizi in esecuzione.
+
+
+	\lstinputlisting%
+		[float=tb,
+		style=DOS,
+		caption={Stato di Kubernetes durante l'esecuzione dell'applicazione a microservizi.
+			In ordine dall'alto al basso sono mostrati deployment, service, pod, replicaset},
+			captionpos=b,
+			label=lst:esecKube]%
+		{codici/cap4/shell_kube.txt}
+		
 	
+\section{Altre funzionalità}
+
+	Le rimanenti funzionalità dell'applicazione riguardano la registrazione di nuovi clienti e il tracciamento dei pacchi.
+	
+	La registrazione di nuovi clienti avviene attraverso un'API sul percorso \texttt{/registerCustomer} inviando un file JSON con i campi \emph{cognome}, \emph{sesso}, \emph{data di nascita}, \emph{email}, \emph{password}.
+	Se tutte le informazioni rispettano i vincoli relativi all'attributo in esame l'utente viene registrato ed è subito possibile effettuare il login.
+	
+	La funzionalità di tracciamento dei pacchi è invocabile sul percorso \texttt{/trackOrder} dell'API specificando come parametro all'interno dell'URL l'ID dell'ordine di cui si vuole conoscere lo stato.
+	La chiamata all'API avverrà con un URL di questa forma: \texttt{localhost:5000/trackOrder?id=16}.
+
+
