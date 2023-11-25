@@ -26,9 +26,10 @@
 \contentsline {section}{\numberline {4.2}{Database}}{14}{section.4.2}%
 \contentsline {section}{\numberline {4.3}{Esecuzione delle richieste}}{15}{section.4.3}%
 \contentsline {section}{\numberline {4.4}{Evoluzione dello stato di un ordine}}{16}{section.4.4}%
-\contentsline {section}{\numberline {4.5}{Implementazione dei microservizi}}{18}{section.4.5}%
-\contentsline {section}{\numberline {4.6}{Altre funzionalità}}{19}{section.4.6}%
-\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{24}{chapter.6}%
-\contentsline {chapter}{{Bibliografia}}{26}{chapter*.17}%
+\contentsline {section}{\numberline {4.5}{Pagamento di un ordine}}{18}{section.4.5}%
+\contentsline {section}{\numberline {4.6}{Implementazione dei microservizi}}{18}{section.4.6}%
+\contentsline {section}{\numberline {4.7}{Altre funzionalità}}{20}{section.4.7}%
+\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{25}{chapter.6}%
+\contentsline {chapter}{{Bibliografia}}{27}{chapter*.17}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -162,7 +162,7 @@
 	
 	\begin{enumerate}
 		\item Viene registrato il nuovo ordine nella tabella \emph{Orders} del database, il quale si occupa di assegnare un ID univoco.
-		Lo stato dell'ordine è impostato su \emph{created} finché non ha l'ID assegnato e viene in seguito modificato in \emph{created}.
+		Lo stato dell'ordine è impostato su \emph{created} finché non ha l'ID assegnato e viene in seguito modificato in \emph{confirmed}.
 		
 		\item Vengono prelevati i prodotti ordinati dal magazzino, modificando le quantità residue nella tabella \emph{Articles}.
 		Se si tenta di rimuovere un numero di prodotti superiore a quelli presenti in magazzino viene generata un'eccezione per la violazione del \emph{vincolo check} spiegato alla Sezione \ref{sec:quantityCheck};
@@ -177,10 +177,20 @@
 	
 
 	
+\section{Pagamento di un ordine}
+
+	La funzione di pagamento degli ordini è molto semplificata e puramente esemplificativa, la connessione con un vero servizio di pagamento elettronico avrebbe aumentato di molto la complessità del progetto, uscendo dagli obiettivi dello stesso.
+	Si è quindi deciso di simulare le operazioni di pagamento \emph{addormentando} il thread per 100 ms.
+	
+	Per richiamare la funzione di pagamento è sufficiente inviare una richiesta sul percorso \texttt{/payOrder}, includendo il token di autenticazione all'interno del \emph{header} della chiamata e un file JSON contenente l'ID dell'ordine che si desidera completare.
+	La forma deve essere la seguente \mintinline{json}{{"orderID": 16}}.
+
+
+	
 \section{Implementazione dei microservizi}
 
 	L'applicazione a microservizi nasce dal codice dell'applicazione monolitica riorganizzandolo in unità indipendenti sulla base dei diversi servizi offerti.
-	Al fine di evitare colli di bottiglia dovuti alla presenza di un singolo punto d'ingresso per le richieste, ogni microservizio espone delle proprie API.
+	Al fine di evitare colli di bottiglia dovuti alla presenza di un singolo punto d'ingresso per le richieste, ogni microservizio espone delle proprie API su un percorso e una porta specifici.
 	
 	\begin{figure}[tbp]
 		\centering
@@ -194,7 +204,7 @@
 	
 	\begin{itemize}
 		\item \emph{Authentication}:
-			Gestisce l'autenticazione dell'utente e controlla la validità dei token.
+			Gestisce l'autenticazione dell'utente, rilasciando e verificando la validità dei token.
 			Espone API con metodo POST sul percorso \texttt{/login} alla porta 5000.
 		
 		\item \emph{Customers}:
@@ -219,9 +229,48 @@
 
 	Sempre al fine di evitare colli di bottiglia si è preferito lasciare il DBMS in esecuzione locale, senza creare un microservizio dedicato che avrebbe rappresentato un ulteriore grado di complessità.
 	
+	\medskip
+	L'applicazione a microservizi è stata eseguita su container utilizzando Kubernetes come orchestratore nella sua versione completa, solitamente riferita anche come K8s (8 è il numero di lettere tra \emph{K} e \emph{s}).
+	%
+	L'avvio di un cluster Kubernetes non è un processo semplice e implica diversi passaggi.
+	
+	\begin{itemize}	
+		\item Occorre scegliere l'infrastruttura su cui eseguire il cluster, per questo progetto è stato scelto di avviare il tutto in locale.
+		
+		\item Bisogna installare un \emph{sistema runtime} per container, ossia il sistema che si occuperà dell'esecuzione di ciascun container;
+		Docker in questo caso.
+		
+		\item Occorre installare \emph{kubectl}, \emph{kubeadm}, \emph{kubelet} e \emph{kubernetes-cni}, componenti chiave di Kubernetes che permettono l'interazione, la creazione e il mantenimento del cluster kubernetes.
+		
+		\item Infine, si può procedere con l'istanziazione del cluster vero e proprio, che nel caso in esame è avvenuto fornendo tramite shell al comando \texttt{kubectl} un file con la configurazione desiderata in formato YAML (come spiegato alla Sezione \ref{sec:kubernetes}).
+	\end{itemize}
+	
+	La configurazione ha previsto la generazione di sei \emph{Deployment}, ciascuno dedicato all'esecuzione dei pod relativi a un microservizio;
+	il ReplicaSet di tutti i pod è stato impostato a 1 poiché il sistema si è rivelato in grado di soddisfare tutte le richieste in tempi brevi durante la fase di test.
+	Parallelamente ad ogni deployment, all'interno del file di configurazione si è anche specificata la generazione di sei Service, tutti di tipo \emph{Load Balancer}, la categoria che permette l'esposizione di alcune porte all'esterno del cluster e la distribuzione del numero di richieste su tutte le istanze di un'applicazione.
+	In Listing \ref{lst:yaml-service} è riportato un esempio di dichiarazione di un service.
+	
 	In Listing \ref{lst:esecKube} è riportato lo stato di Kubernetes con l'applicazione a microservizi in esecuzione.
 
-
+	\begin{listing}[tb]
+	\begin{minted}{yaml}
+apiVersion: v1
+kind: Service
+metadata:
+  name: authentication-service
+spec:
+  selector:
+    app: authentication-app
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000
+	\end{minted}
+	\caption{Dichiarazione del service per il deployment Authentication}
+	\label{lst:yaml-service}
+	\end{listing}
+	
 	\lstinputlisting%
 		[float=tb,
 		style=DOS,

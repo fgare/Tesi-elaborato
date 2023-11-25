@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{apiVersion}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{v1}
+\PYG{n+nt}{kind}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Service}
+\PYG{n+nt}{metadata}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{authentication\PYGZhy{}service}
+\PYG{n+nt}{spec}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{selector}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{app}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{authentication\PYGZhy{}app}
+\PYG{+w}{  }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{LoadBalancer}
+\PYG{+w}{  }\PYG{n+nt}{ports}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{protocol}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{TCP}
+\PYG{+w}{    }\PYG{n+nt}{port}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{5000}
+\PYG{+w}{    }\PYG{n+nt}{targetPort}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{5000}
+\end{Verbatim}
