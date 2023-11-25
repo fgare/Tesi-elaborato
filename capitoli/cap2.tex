@@ -33,6 +33,7 @@
 			\includegraphics[width=\linewidth]{img/cap2/Microservice_architecture.png}
 		\end{subfigure}
 		\caption{Principio di funzionamento di un'applicazione monolitica e una a microservizi\cite{site:archComparison} }
+		\label{fig:monoliticaVSmicros}
 	\end{figure}
 	
 	
@@ -48,7 +49,7 @@
 \section{Deployment su macchine virtuali}
 
 	Le macchine virtuali sono pacchetti software piuttosto pesanti, in grado di eseguire l'emulazione dei dispositivi hardware di basso livello quali CPU, RAM, dischi e schede di rete.
-	Il deployment su macchine virtuali (anche chiamato deployment virtualizzato) prevede l'esecuzione di più macchine virtuali sul server fisico, ciascuna delle quali esegue un sistema operativo che a sua volta esegue una o più applicazioni.
+	Il deployment su macchine virtuali (Figura \ref{fig:VM_vs_container}), anche chiamato deployment virtualizzato, prevede l'esecuzione di più macchine virtuali sul server fisico, ciascuna delle quali esegue un sistema operativo che a sua volta esegue una o più applicazioni.
 	Un simile approccio è in grado di far fronte ad alcune delle problematiche del deployment tradizionale:
 	
 	\begin{itemize}
@@ -60,6 +61,13 @@
 	
 	Contrariamente, i principali svantaggi delle macchine virtuali riguardano la ridotta velocità di generazione e distribuzione delle stesse e il maggiore spazio di archiviazione richiesto:
 	trattandosi di \emph{immagini} di un sistema indipendente possono infatti richiedere diverso tempo per essere generate e configurate, l'affiancamento di diverse macchine virtuali porta inoltre alla duplicazione del sistema operativo installato su di esse, con un conseguente utilizzo di spazio di archiviazione.
+	
+	Esistono un gran numero di piattaforme online che permettono l'acquisto di macchine virtuali in cloud, permettendone di dimensionare ciascuna macchina sulla base delle esigenze del cliente.
+	I servizi più famosi sono senz'altro Amazon Web Services (AWS), Microsoft Azure e Google Cloud Platform (GCP).
+	
+	Negli ultimi anni sono anche nati diversi sistemi che permettono di automatizzare la generazione, la configurazione e la gestione di macchine virtuali;
+	essi permettono di dichiarare lo stato di esecuzione che si desidera avere e si occupano di mantenere questo stato nel tempo.
+	Rientrano in questa categoria strumenti quali Ansible, Vagrant e Terraform.
 
 
 
@@ -67,23 +75,18 @@
 	
 	\label{sec:depl_on_cont}
 	Un \emph{container} è un modello di virtualizzazione più leggero rispetto ad una macchina virtuale che racchiude un software e tutte le dipendenze necessarie ad eseguirlo.
-	Al pari delle macchine virtuali i container rappresentano un ambiente isolato, con risorse limitate ed un proprio file system per l'esecuzione del software ma non virtualizzano un intero sistema operativo.
+	Al pari delle macchine virtuali i container rappresentano un ambiente isolato, con risorse limitate ed un proprio file system per l'esecuzione del software ma non virtualizzano un intero sistema operativo (Figura \ref{fig:VM_vs_container}).
 	L'uso di container offre una grande efficienza in fase di sviluppo  e di esecuzione, contengono infatti solo software di alto livello e sono molto veloci da modificare, oltre al fatto che non dovendo virtualizzare un sistema operativo la loro esecuzione risulta molto più rapida e meno esosa di risorse hardware.
-	Per finire molti sistemi runtime per container mettono a disposizione degli sviluppatori repository pubbliche con immagini preconfezionate di software popolari, il tutto al fine di avere uno sviluppo ancora più rapido
+	Per finire molti sistemi runtime per container mettono a disposizione degli sviluppatori repository pubbliche con immagini preconfezionate di software popolari, il tutto al fine di avere uno sviluppo ancora più rapido (Figura \ref{fig:monoliticaVSmicros})
 	\cite{doc:kube, site:container_vs_VM}.
+	
+	Docker è sicuramente il più popolare tra i sistemi sviluppati per offrire la virtualizzazione su container, ed è anche merito di questo progetto \emph{open-source} se lo sviluppo su container si è diffuso così tanto negli ultimi anni.
+	Spesso utilizzato come alternativa a Docker è Podman (Pod Manager), il quale pone maggior accento sull'aspetto della sicurezza\ref{site:podman}.
+	
 	
 	\begin{figure}[tbp]
 		\includegraphics[width=\textwidth]{img/cap2/Diagram_Containers_VirtualMachines.png}
 		\caption{Confronto tra un sistema basato su macchine virtuali e container\cite{site:container_vs_VM}}
 		\label{fig:VM_vs_container}
 	\end{figure}
-
-
-
-
-
-
-
-
-
 

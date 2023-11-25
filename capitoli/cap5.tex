@@ -34,15 +34,16 @@
 		\item Fine.
 	\end{enumerate}
 	
-	Si possono quindi calcolare cinque intervalli di tempo, indicati in ordine con lettere da A a D.
+	Si possono quindi calcolare quattro intervalli di tempo, indicati in ordine con lettere da A a D.
 	In Tabella \ref{tab:tempi-monolitica} e \ref{tab:tempi-microserv} sono riportati gli indici statistici più rilevanti ottenuti dai dati inerenti i tempi di esecuzione di ogni fase, in Figura \ref{fig:grafici-monolitica} e \ref{fig:grafici-microserv} i dati sono invece rappresentati sotto forma di boxplot ed istogramma.
 
-	L'indice di maggior interesse è sicuramente la media e si nota un generale leggero vantaggio per l'applicazione monolitica, dovuto al \emph{overhead} introdotto dall'orchestratore dei container.
-	In un'applicazione molto semplice come quelle realizzate per questa ricerca la differenza è poco marcata o addirittura a
-	Va anche tenuto in considerazione che il test è stato eseguito su un personal computer di potenza limitata, sicuramente ben lontano dalla capacità di calcolo offerta da un server reale.
-
-
-
+	Gli indici di maggior interesse sono sicuramente media e mediana, i quali evidenziano un generale leggero vantaggio per l'applicazione monolitica;
+	la versione a microservizi risenti infatti dell'\emph{overhead} introdotto dall'orchestratore dei container.
+	
+	In un'applicazione semplice come quelle realizzate per questa ricerca l'applicazione monolitica presenta un vantaggio poiché si presenta complessivamente più snella,
+	il crescere del traffico da soddisfare tuttavia farebbe emergere i vantaggi di un sistema a microservizi e dell'esecuzione con un orchestratore quale Kubernetes.
+	
+	Per conclude va anche tenuto in considerazione che il test è stato eseguito su un personal computer di potenza limitata, sicuramente ben lontano dalla capacità di calcolo offerta da un server reale.
 
 
 	\begin{table}[tbp]
@@ -51,11 +52,11 @@
 			\toprule
 			\mbox{\textbf{Fase}} & \textbf{A}[ms] & \textbf{B}[ms] & \textbf{C}[ms] & \textbf{D}[ms]\\
 			\midrule
-			\mbox{Minimo} & 29.86 & 29.76 & 33.61 & 28.92\\
-			\mbox{1° quartile} & 37.52 & 36.75 & 43.02 & 36.58\\
-			\mbox{Mediana} & 40.09 & 39.39 & 46.33 & 38.96\\
-			\mbox{3° quartile} & 43.3 & 42.05 & 49.75 & 42.35\\
-			\mbox{Massimo} & 171.75 & 163.46 & 170.81 & 267.56\\
+			\mbox{Minimo} & 29.86 & 29.76 & 33.61 & 128.92\\
+			\mbox{1° quartile} & 37.52 & 36.75 & 43.02 & 136.58\\
+			\mbox{Mediana} & 40.09 & 39.39 & 46.33 & 138.96\\
+			\mbox{3° quartile} & 43.3 & 42.05 & 49.75 & 142.35\\
+			\mbox{Massimo} & 171.75 & 163.46 & 170.81 & 367.56\\
 			\mbox{Media} & 42.86 & 41.35 & 48.88 & 57.24\\
 			\bottomrule
 		\end{array}
