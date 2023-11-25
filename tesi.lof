@@ -1,20 +1,18 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\deactivateaddvspace 
-\ttl@tocsep 
-\ttl@tocsep 
-\ttl@tocsep 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Principio di funzionamento di un'applicazione monolitica e una a microservizi\blx@tocontentsinit {0}\cite {site:archComparison} \relax }}{6}{figure.caption.2}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Confronto tra un sistema basato su macchine virtuali e container\blx@tocontentsinit {0}\cite {site:container_vs_VM}\relax }}{7}{figure.caption.3}%
-\ttl@tocsep 
-\ttl@tocsep 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schema del database\relax }}{15}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramma a stati finiti degli stati definiti per un ordine\relax }}{16}{figure.caption.10}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Struttura del sistema a microservizi\relax }}{18}{figure.caption.11}%
-\ttl@tocsep 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Boxplot e istogramma relativi ai tempi di esecuzione dell'applicazione monolitica\relax }}{24}{figure.caption.15}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Boxplot e istogramma relativi ai tempi di esecuzione dell'applicazione a microservizi\relax }}{24}{figure.caption.16}%
-\ttl@tocsep 
-\ttl@tocsep 
-\ttl@tocsep 
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schema di funzionamento di un'applicazione monolitica\blx@tocontentsinit {0}\cite {site:archComparison}}}{4}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schema di funzionamento di un'applicazione a microservizi\blx@tocontentsinit {0}\cite {site:archComparison} }}{4}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Confronto tra un sistema basato su macchine virtuali e container\blx@tocontentsinit {0}\cite {site:container_vs_VM}}}{6}{figure.2.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schema del database}}{15}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramma a stati finiti degli stati definiti per un ordine}}{16}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Struttura del sistema a microservizi}}{18}{figure.4.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Boxplot relativo ai tempi di esecuzione dell'applicazione monolitica}}{24}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Istogramma relativo ai tempi di esecuzione dell'applicazione monolitica}}{25}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Boxplot relativo ai tempi di esecuzione dell'applicazione a microservizi}}{25}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Istogramma relativo ai tempi di esecuzione dell'applicazione a microservizi}}{25}{figure.5.4}%
+\addvspace {10\p@ }

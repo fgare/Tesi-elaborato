@@ -1,35 +1,33 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\vspace {-\cftbeforepartskip }
-\contentsline {chapter}{\numberline {1}{Introduzione}}{3}{chapter.1}%
-\contentsline {chapter}{\numberline {2}{Stato dell'arte}}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}{Architettura monolitica}}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}{Deployment tradizionale}}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}{Deployment su macchine virtuali}}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}{Deployment su container}}{7}{section.2.4}%
-\contentsline {chapter}{\numberline {3}{Architettura del sistema}}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}{Struttura}}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}{Tecnologie utilizzate}}{8}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}{Python}}{8}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}{PostgreSQL}}{9}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}{Docker}}{9}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}{Kubernetes}}{9}{subsection.3.2.4}%
-\contentsline {paragraph}{{Cluster}}{10}{paragraph*.4}%
-\contentsline {paragraph}{{Nodi}}{10}{paragraph*.5}%
-\contentsline {paragraph}{{Pod}}{10}{paragraph*.6}%
-\contentsline {paragraph}{{Deployment e Replicaset}}{10}{paragraph*.7}%
-\contentsline {paragraph}{{Service}}{11}{paragraph*.8}%
-\contentsline {subsection}{\numberline {3.2.5}{API REST}}{11}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}{Token JWT}}{12}{subsection.3.2.6}%
-\contentsline {chapter}{\numberline {4}{Implementazione}}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}{Autenticazione e autorizzazione}}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}{Database}}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}{Esecuzione delle richieste}}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}{Evoluzione dello stato di un ordine}}{16}{section.4.4}%
-\contentsline {section}{\numberline {4.5}{Pagamento di un ordine}}{18}{section.4.5}%
-\contentsline {section}{\numberline {4.6}{Implementazione dei microservizi}}{18}{section.4.6}%
-\contentsline {section}{\numberline {4.7}{Altre funzionalità}}{20}{section.4.7}%
-\contentsline {chapter}{\numberline {5}{Risultati ottenuti}}{22}{chapter.5}%
-\contentsline {chapter}{\numberline {6}{Conclusioni e sviluppi futuri}}{25}{chapter.6}%
-\contentsline {chapter}{{Bibliografia}}{27}{chapter*.17}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Stato dell'arte}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Architettura monolitica}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Deployment tradizionale}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Deployment su macchine virtuali}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Deployment su container}{6}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Architettura del sistema}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Struttura}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Tecnologie utilizzate}{8}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Python}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}PostgreSQL}{8}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Docker}{8}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Kubernetes}{9}{subsection.3.2.4}%
+\contentsline {paragraph}{Cluster}{9}{paragraph*.2}%
+\contentsline {paragraph}{Nodi}{9}{paragraph*.3}%
+\contentsline {paragraph}{Pod}{10}{paragraph*.4}%
+\contentsline {paragraph}{Deployment e Replicaset}{10}{paragraph*.5}%
+\contentsline {paragraph}{Service}{10}{paragraph*.6}%
+\contentsline {subsection}{\numberline {3.2.5}API REST}{10}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Token JWT}{11}{subsection.3.2.6}%
+\contentsline {chapter}{\numberline {4}Implementazione}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Autenticazione e autorizzazione}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Database}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Esecuzione delle richieste}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Evoluzione dello stato di un ordine}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Pagamento di un ordine}{17}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Implementazione dei microservizi}{17}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Altre funzionalità}{20}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Risultati ottenuti}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusioni e sviluppi futuri}{26}{chapter.6}%
+\contentsline {chapter}{Bibliografia}{29}{chapter*.9}%

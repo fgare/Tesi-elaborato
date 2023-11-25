@@ -205,7 +205,7 @@
 	\begin{itemize}
 		\item \emph{Authentication}:
 			Gestisce l'autenticazione dell'utente, rilasciando e verificando la validità dei token.
-			Espone API con metodo POST sul percorso \texttt{/login} alla porta 5000.
+			Espone API con metodo POST sul percorso \texttt{/login} alla porta~5000.
 		
 		\item \emph{Customers}:
 			Permette l'iscrizione di nuovi utenti, tramite una API con metodo POST alla porta 5005 sul percorso \texttt{/registerCustomer}.
@@ -248,7 +248,7 @@
 	La configurazione ha previsto la generazione di sei \emph{Deployment}, ciascuno dedicato all'esecuzione dei pod relativi a un microservizio;
 	il ReplicaSet di tutti i pod è stato impostato a 1 poiché il sistema si è rivelato in grado di soddisfare tutte le richieste in tempi brevi durante la fase di test.
 	Parallelamente ad ogni deployment, all'interno del file di configurazione si è anche specificata la generazione di sei Service, tutti di tipo \emph{Load Balancer}, la categoria che permette l'esposizione di alcune porte all'esterno del cluster e la distribuzione del numero di richieste su tutte le istanze di un'applicazione.
-	In Listing \ref{lst:yaml-service} è riportato un esempio di dichiarazione di un service.
+	In Listing~\ref{lst:yaml-service} è riportato un esempio di dichiarazione di un service.
 	
 	In Listing \ref{lst:esecKube} è riportato lo stato di Kubernetes con l'applicazione a microservizi in esecuzione.
 

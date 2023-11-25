@@ -35,7 +35,7 @@
 	\end{enumerate}
 	
 	Si possono quindi calcolare quattro intervalli di tempo, indicati in ordine con lettere da A a D.
-	In Tabella \ref{tab:tempi-monolitica} e \ref{tab:tempi-microserv} sono riportati gli indici statistici più rilevanti ottenuti dai dati inerenti i tempi di esecuzione di ogni fase, in Figura \ref{fig:grafici-monolitica} e \ref{fig:grafici-microserv} i dati sono invece rappresentati sotto forma di boxplot ed istogramma.
+	In Tabella \ref{tab:tempi-monolitica} e \ref{tab:tempi-microserv} sono riportati gli indici statistici più rilevanti ottenuti dai dati inerenti i tempi di esecuzione di ogni fase, in Figura \ref{fig:boxplot-mono}, \ref{fig:isto-monolitica}, \ref{fig:boxplot-micros} e \ref{fig:isto-micros} i dati sono invece rappresentati sotto forma di boxplot ed istogramma.
 
 	Gli indici di maggior interesse sono sicuramente media e mediana, i quali evidenziano un generale leggero vantaggio per l'applicazione monolitica;
 	la versione a microservizi risenti infatti dell'\emph{overhead} introdotto dall'orchestratore dei container.
@@ -44,6 +44,12 @@
 	il crescere del traffico da soddisfare farebbe tuttavia emergere i vantaggi di un sistema a microservizi e dell'esecuzione con un orchestratore quale Kubernetes, permettendo la distribuzione delle richieste su più nodi.
 	
 	Per conclude va anche tenuto in considerazione che il test è stato eseguito su un personal computer di potenza limitata, sicuramente ben lontano dalla capacità di calcolo offerta da un server reale.
+	
+	\medskip
+	Anche un secondo script è stato realizzato al fine di emulare un cliente di tipo \emph{supplier} (fornitore);
+	questo effettua periodicamente (ogni 15 secondi) il login con le proprie credenziali e richiede la lista dei prodotti a magazzino (tramite una richiesta POST sul percorso \texttt{/productsList}), aggiungendo una quantità casuale dei prodotti presenti con meno di 50 pezzi.
+	Questa operazione è molto utile in quanto permette di rifornire costantemente il magazzino virtuale assicurando che il gran numero di ordini effettuati dagli utenti possa essere soddisfatto.
+	Nella logica applicativa infatti la mancanza di anche solo un prodotto porta alla cancellazione dell'intero ordine effettuato dal cliente.
 
 
 	\begin{table}[tbp]
@@ -85,29 +91,31 @@
 	\end{table}
 
 	\begin{figure}[tbp]
-		\begin{subfigure}{0.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{img/cap5/monolithic/boxplot.pdf}
-		\end{subfigure}
-		\begin{subfigure}{0.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{img/cap5/monolithic/istogramma.pdf}
-		\end{subfigure}
-		\caption{Boxplot e istogramma relativi ai tempi di esecuzione dell'applicazione monolitica}
-		\label{fig:grafici-monolitica}
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/cap5/monolithic/boxplot.pdf}
+		\caption{Boxplot relativo ai tempi di esecuzione dell'applicazione monolitica}
+		\label{fig:boxplot-mono}
 	\end{figure}
 	
 	\begin{figure}[tbp]
-		\begin{subfigure}{0.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{img/cap5/microservices/boxplot.pdf}
-		\end{subfigure}
-		\begin{subfigure}{0.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{img/cap5/microservices/istogramma.pdf}
-		\end{subfigure}
-		\caption{Boxplot e istogramma relativi ai tempi di esecuzione dell'applicazione a microservizi}
-		\label{fig:grafici-microserv}
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/cap5/monolithic/istogramma.pdf}
+		\caption{Istogramma relativo ai tempi di esecuzione dell'applicazione monolitica}
+		\label{fig:isto-monolitica}
+	\end{figure}
+	
+	\begin{figure}[tbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/cap5/microservices/boxplot.pdf}
+		\caption{Boxplot relativo ai tempi di esecuzione dell'applicazione a microservizi}
+		\label{fig:boxplot-micros}
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/cap5/microservices/istogramma.pdf}
+		\caption{Istogramma relativo ai tempi di esecuzione dell'applicazione a microservizi}
+		\label{fig:isto-micros}
 	\end{figure}
 	
 	

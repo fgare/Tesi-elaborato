@@ -24,16 +24,17 @@
 	\end{itemize}
 	
 	\begin{figure}[tbp]
-		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{img/cap2/Monolithic_architecture.png}
-		\end{subfigure}
-		\begin{subfigure}{0.5\textwidth}
+			\includegraphics[width=0.5\textwidth]{img/cap2/Monolithic_architecture.png}
+			\caption{Schema di funzionamento di un'applicazione monolitica\cite{site:archComparison}}
+			\label{fig:schemaMonol}
+	\end{figure}
+	
+	\begin{figure}
 			\centering
-			\includegraphics[width=\linewidth]{img/cap2/Microservice_architecture.png}
-		\end{subfigure}
-		\caption{Principio di funzionamento di un'applicazione monolitica e una a microservizi\cite{site:archComparison} }
-		\label{fig:monoliticaVSmicros}
+			\includegraphics[width=0.5\textwidth]{img/cap2/Microservice_architecture.png}
+		\caption{Schema di funzionamento di un'applicazione a microservizi\cite{site:archComparison} }
+		\label{fig:schemaMicros}
 	\end{figure}
 	
 	
@@ -77,11 +78,11 @@
 	Un \emph{container} è un modello di virtualizzazione più leggero rispetto ad una macchina virtuale che racchiude un software e tutte le dipendenze necessarie ad eseguirlo.
 	Al pari delle macchine virtuali i container rappresentano un ambiente isolato, con risorse limitate ed un proprio file system per l'esecuzione del software ma non virtualizzano un intero sistema operativo (Figura \ref{fig:VM_vs_container}).
 	L'uso di container offre una grande efficienza in fase di sviluppo  e di esecuzione, contengono infatti solo software di alto livello e sono molto veloci da modificare, oltre al fatto che non dovendo virtualizzare un sistema operativo la loro esecuzione risulta molto più rapida e meno esosa di risorse hardware.
-	Per finire molti sistemi runtime per container mettono a disposizione degli sviluppatori repository pubbliche con immagini preconfezionate di software popolari, il tutto al fine di avere uno sviluppo ancora più rapido (Figura \ref{fig:monoliticaVSmicros})
+	Per finire molti sistemi runtime per container mettono a disposizione degli sviluppatori repository pubbliche con immagini preconfezionate di software popolari, il tutto al fine di avere uno sviluppo ancora più rapido (Figura \ref{fig:schemaMicros})
 	\cite{doc:kube, site:container_vs_VM}.
 	
 	Docker è sicuramente il più popolare tra i sistemi sviluppati per offrire la virtualizzazione su container, ed è anche merito di questo progetto \emph{open-source} se lo sviluppo su container si è diffuso così tanto negli ultimi anni.
-	Spesso utilizzato come alternativa a Docker è Podman (Pod Manager), il quale pone maggior accento sull'aspetto della sicurezza\ref{site:podman}.
+	Spesso utilizzato come alternativa a Docker è Podman (Pod Manager), il quale pone maggior accento sull'aspetto della sicurezza\cite{site:podman}.
 	
 	
 	\begin{figure}[tbp]

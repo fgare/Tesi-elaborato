@@ -175,6 +175,19 @@
       \verb https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms
       \endverb
     \endentry
+    \entry{site:podman}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{label}{site}
+      \field{title}{What is Podman?}
+      \verb{urlraw}
+      \verb https://www.redhat.com/en/topics/containers/what-is-podman
+      \endverb
+      \verb{url}
+      \verb https://www.redhat.com/en/topics/containers/what-is-podman
+      \endverb
+    \endentry
     \entry{site:kube_better_docker}{online}{}
       \field{sortinit}{s}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
