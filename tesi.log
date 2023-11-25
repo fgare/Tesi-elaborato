@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  24 NOV 2023 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  25 NOV 2023 01:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1141,6 +1141,84 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 )
+(c:/texlive/2022/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+
+(c:/texlive/2022/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\c@svg@param@lastpage=\count475
+\svg@box=\box113
+\c@svg@param@currpage=\count476
+)
+(c:/texlive/2022/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen268
+\pgfutil@tempdimb=\dimen269
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box114
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen270
+\pgf@y=\dimen271
+\pgf@xa=\dimen272
+\pgf@ya=\dimen273
+\pgf@xb=\dimen274
+\pgf@yb=\dimen275
+\pgf@xc=\dimen276
+\pgf@yc=\dimen277
+\pgf@xd=\dimen278
+\pgf@yd=\dimen279
+\w@pgf@writea=\write6
+\r@pgf@reada=\read6
+\c@pgf@counta=\count477
+\c@pgf@countb=\count478
+\c@pgf@countc=\count479
+\c@pgf@countd=\count480
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count481
+ (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count482
+\pgfsyssoftpath@bigbuffer@items=\count483
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > te
@@ -1150,8 +1228,7 @@ runsystem(del tesi.aex)...executed.
 
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 2
 2.
-
-(c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 ) (./tesi.aux
 (./frontespizio/titlepage.aux))
@@ -1180,17 +1257,17 @@ LaTeX Info: Redefining \it@ccap on input line 22.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count475
-\scratchdimen=\dimen268
-\scratchbox=\box113
-\nofMPsegments=\count476
-\nofMParguments=\count477
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count478
-\MPscratchDim=\dimen269
-\MPnumerator=\count479
-\makeMPintoPDFobject=\count480
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count484
+\scratchdimen=\dimen280
+\scratchbox=\box115
+\nofMPsegments=\count485
+\nofMParguments=\count486
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count487
+\MPscratchDim=\dimen281
+\MPnumerator=\count488
+\makeMPintoPDFobject=\count489
+\everyMPtoPDFconversion=\toks37
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1200,7 +1277,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\big@size=\dimen270
+\big@size=\dimen282
 LaTeX Info: Redefining \microtypecontext on input line 22.
 Package microtype Info: Applying patch `item' on input line 22.
 Package microtype Info: Applying patch `toc' on input line 22.
@@ -1228,8 +1305,8 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 22.
  (./tesi.out)
 (./tesi.out)
-\@outlinefile=\write6
-\openout6 = `tesi.out'.
+\@outlinefile=\write7
+\openout7 = `tesi.out'.
 
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
@@ -1244,7 +1321,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count481
+\BKM@id=\count490
 ))
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1297,7 +1374,16 @@ Package biblatex Info: Reference segment=0 on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count482
+\c@lstlisting=\count491
+(|'inkscape' -V )
+
+Package svg Warning: No version of Inkscape was detected by invoking
+(svg)                `inkscape -V'
+(svg)                so the Inkscape export will fail quite sure as the
+(svg)                command is probably unknown to your OS. You could set
+(svg)                `inkscapeversion=<version>' manually but this is very
+(svg)                unlikely to work on input line 22.
+
 \openout2 = `frontespizio/titlepage.aux'.
 
 (./frontespizio/titlepage.tex
@@ -1333,7 +1419,7 @@ Package biblatex Info: Reference segment=0 on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<frontespizio/logounivector.pdf, id=4, 422.47905pt x 402.27107pt>
+<frontespizio/logounivector.pdf, id=7, 422.47905pt x 402.27107pt>
 File: frontespizio/logounivector.pdf Graphic file (type pdf)
 <use frontespizio/logounivector.pdf>
 Package pdftex.def Info: frontespizio/logounivector.pdf  used on input line 6.
@@ -1400,8 +1486,8 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 )
-\tf@toc=\write7
-\openout7 = `tesi.toc'.
+\tf@toc=\write8
+\openout8 = `tesi.toc'.
 
 
 (./capitoli/cap1.tex
@@ -1422,20 +1508,20 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 (./capitoli/cap2.tex
 Capitolo 2.
 [4]
-<img/cap2/Monolithic_architecture.png, id=95, 444.66125pt x 386.94562pt>
+<img/cap2/Monolithic_architecture.png, id=98, 444.66125pt x 386.94562pt>
 File: img/cap2/Monolithic_architecture.png Graphic file (type png)
 <use img/cap2/Monolithic_architecture.png>
 Package pdftex.def Info: img/cap2/Monolithic_architecture.png  used on input li
-ne 28.
+ne 29.
 (pdftex.def)             Requested size: 209.12683pt x 181.98254pt.
-<img/cap2/Microservice_architecture.png, id=96, 444.66125pt x 320.69812pt>
+<img/cap2/Microservice_architecture.png, id=99, 444.66125pt x 320.69812pt>
 File: img/cap2/Microservice_architecture.png Graphic file (type png)
 <use img/cap2/Microservice_architecture.png>
 Package pdftex.def Info: img/cap2/Microservice_architecture.png  used on input 
-line 32.
+line 33.
 (pdftex.def)             Requested size: 209.12683pt x 150.826pt.
 
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 26--34
+Overfull \hbox (2.41994pt too wide) in paragraph at lines 27--35
 [][] [] 
  []
 
@@ -1447,12 +1533,12 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [6 <./img/cap2/Monolithic_architecture.png (PNG copy)> <./img/cap2/Microservic
 e_architecture.png (PNG copy)>]
-<img/cap2/Diagram_Containers_VirtualMachines.png, id=112, 3854.4pt x 1336.995pt
+<img/cap2/Diagram_Containers_VirtualMachines.png, id=115, 3854.4pt x 1336.995pt
 >
 File: img/cap2/Diagram_Containers_VirtualMachines.png Graphic file (type png)
 <use img/cap2/Diagram_Containers_VirtualMachines.png>
 Package pdftex.def Info: img/cap2/Diagram_Containers_VirtualMachines.png  used 
-on input line 71.
+on input line 76.
 (pdftex.def)             Requested size: 418.25368pt x 145.07062pt.
 ) (./capitoli/cap3.tex
 Capitolo 3.
@@ -1483,7 +1569,7 @@ ve_quantity_remaining_check\T1/pplj/m/n/10.95 (-20) ,
  []
 
 [14]
-<img/cap4/ER-Diagram.png, id=204, 554.3109pt x 282.5757pt>
+<img/cap4/ER-Diagram.png, id=207, 554.3109pt x 282.5757pt>
 File: img/cap4/ER-Diagram.png Graphic file (type png)
 <use img/cap4/ER-Diagram.png>
 Package pdftex.def Info: img/cap4/ER-Diagram.png  used on input line 108.
@@ -1492,7 +1578,7 @@ Package pdftex.def Info: img/cap4/ER-Diagram.png  used on input line 108.
 
 pdfTeX warning: pdflatex.exe (file ./img/cap4/statiOrdine.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<img/cap4/statiOrdine.pdf, id=213, 645.37106pt x 234.8775pt>
+<img/cap4/statiOrdine.pdf, id=216, 645.37106pt x 234.8775pt>
 File: img/cap4/statiOrdine.pdf Graphic file (type pdf)
 <use img/cap4/statiOrdine.pdf>
 Package pdftex.def Info: img/cap4/statiOrdine.pdf  used on input line 145.
@@ -1513,7 +1599,7 @@ t line 156.
 
 pdfTeX warning: pdflatex.exe (file ./img/cap4/microservizi.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<img/cap4/microservizi.pdf, id=242, 417.47968pt x 278.96219pt>
+<img/cap4/microservizi.pdf, id=245, 417.47968pt x 278.96219pt>
 File: img/cap4/microservizi.pdf Graphic file (type pdf)
 <use img/cap4/microservizi.pdf>
 Package pdftex.def Info: img/cap4/microservizi.pdf  used on input line 187.
@@ -1534,35 +1620,35 @@ Capitolo 5.
 [20] [21
 
 ]
-<img/cap5/monolithic/boxplot.png, id=330, 462.528pt x 346.896pt>
-File: img/cap5/monolithic/boxplot.png Graphic file (type png)
-<use img/cap5/monolithic/boxplot.png>
-Package pdftex.def Info: img/cap5/monolithic/boxplot.png  used on input line 89
+<img/cap5/monolithic/boxplot.pdf, id=333, 462.52798pt x 346.89601pt>
+File: img/cap5/monolithic/boxplot.pdf Graphic file (type pdf)
+<use img/cap5/monolithic/boxplot.pdf>
+Package pdftex.def Info: img/cap5/monolithic/boxplot.pdf  used on input line 89
 .
-(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
-<img/cap5/monolithic/istogramma.png, id=331, 462.528pt x 346.896pt>
-File: img/cap5/monolithic/istogramma.png Graphic file (type png)
-<use img/cap5/monolithic/istogramma.png>
-Package pdftex.def Info: img/cap5/monolithic/istogramma.png  used on input line
+(pdftex.def)             Requested size: 209.12683pt x 156.8481pt.
+<img/cap5/monolithic/istogramma.pdf, id=334, 462.52798pt x 346.89601pt>
+File: img/cap5/monolithic/istogramma.pdf Graphic file (type pdf)
+<use img/cap5/monolithic/istogramma.pdf>
+Package pdftex.def Info: img/cap5/monolithic/istogramma.pdf  used on input line
  93.
-(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+(pdftex.def)             Requested size: 209.12683pt x 156.8481pt.
 
 Overfull \hbox (2.41994pt too wide) in paragraph at lines 87--95
 [][] [] 
  []
 
-<img/cap5/microservices/boxplot.png, id=332, 462.528pt x 346.896pt>
-File: img/cap5/microservices/boxplot.png Graphic file (type png)
-<use img/cap5/microservices/boxplot.png>
-Package pdftex.def Info: img/cap5/microservices/boxplot.png  used on input line
+<img/cap5/microservices/boxplot.pdf, id=335, 462.52798pt x 346.89601pt>
+File: img/cap5/microservices/boxplot.pdf Graphic file (type pdf)
+<use img/cap5/microservices/boxplot.pdf>
+Package pdftex.def Info: img/cap5/microservices/boxplot.pdf  used on input line
  102.
-(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
-<img/cap5/microservices/istogramma.png, id=333, 462.528pt x 346.896pt>
-File: img/cap5/microservices/istogramma.png Graphic file (type png)
-<use img/cap5/microservices/istogramma.png>
-Package pdftex.def Info: img/cap5/microservices/istogramma.png  used on input l
+(pdftex.def)             Requested size: 209.12683pt x 156.8481pt.
+<img/cap5/microservices/istogramma.pdf, id=336, 462.52798pt x 346.89601pt>
+File: img/cap5/microservices/istogramma.pdf Graphic file (type pdf)
+<use img/cap5/microservices/istogramma.pdf>
+Package pdftex.def Info: img/cap5/microservices/istogramma.pdf  used on input l
 ine 106.
-(pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+(pdftex.def)             Requested size: 209.12683pt x 156.8481pt.
 
 Overfull \hbox (2.41994pt too wide) in paragraph at lines 100--108
 [][] [] 
@@ -1570,16 +1656,16 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 100--108
 
 ) (./capitoli/cap6.tex
 Capitolo 6.
-[22] [23 <./img/cap5/monolithic/boxplot.png> <./img/cap5/monolithic/istogramma.
-png> <./img/cap5/microservices/boxplot.png> <./img/cap5/microservices/istogramm
-a.png>]) [24
+[22] [23 <./img/cap5/monolithic/boxplot.pdf> <./img/cap5/monolithic/istogramma.
+pdf> <./img/cap5/microservices/boxplot.pdf> <./img/cap5/microservices/istogramm
+a.pdf>]) [24
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 37
 .
  (./tesi.lof)
-\tf@lof=\write8
-\openout8 = `tesi.lof'.
+\tf@lof=\write9
+\openout9 = `tesi.lof'.
 
  [25
 
@@ -1599,26 +1685,26 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33592 strings out of 476855
- 641093 string characters out of 5822299
- 1711964 words of memory out of 5000000
- 53615 multiletter control sequences out of 15000+600000
- 554207 words of font info for 478 fonts, out of 8000000 for 9000
+ 35143 strings out of 476855
+ 677980 string characters out of 5822299
+ 1758976 words of memory out of 5000000
+ 55102 multiletter control sequences out of 15000+600000
+ 554710 words of font info for 477 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  108i,23n,107p,10599b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
-f-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
-lic/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmb8a
-.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive
-/2022/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/u
-rw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/upl
-ri8a.pfb>
-Output written on tesi.pdf (26 pages, 612671 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fon
+ts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fp
+lrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb><c:/t
+exlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texm
+f-dist/fonts/type1/public/bera/fvmro8a.pfb><c:/texlive/2022/texmf-dist/fonts/ty
+pe1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatin
+o/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on tesi.pdf (26 pages, 609130 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
+ 673 PDF objects out of 1000 (max. 8388607)
+ 493 compressed objects within 5 object streams
  158 named destinations out of 1000 (max. 500000)
- 85248 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 85260 words of extra memory for PDF output out of 89155 (max. 10000000)
 

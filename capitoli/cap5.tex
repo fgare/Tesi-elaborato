@@ -34,7 +34,7 @@
 		\item Fine.
 	\end{enumerate}
 	
-	Si possono quindi calcolare cinque intervalli di tempo, indicati in ordine con lettere da A ad E.
+	Si possono quindi calcolare cinque intervalli di tempo, indicati in ordine con lettere da A a D.
 	In Tabella \ref{tab:tempi-monolitica} e \ref{tab:tempi-microserv} sono riportati gli indici statistici più rilevanti ottenuti dai dati inerenti i tempi di esecuzione di ogni fase, in Figura \ref{fig:grafici-monolitica} e \ref{fig:grafici-microserv} i dati sono invece rappresentati sotto forma di boxplot ed istogramma.
 
 	L'indice di maggior interesse è sicuramente la media e si nota un generale leggero vantaggio per l'applicazione monolitica, dovuto al \emph{overhead} introdotto dall'orchestratore dei container.
@@ -49,18 +49,18 @@
 		\[
 		\begin{array}{lccccc}
 			\toprule
-			\mbox{\textbf{Fase}} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E}\\
+			\mbox{\textbf{Fase}} & \textbf{A}[ms] & \textbf{B}[ms] & \textbf{C}[ms] & \textbf{D}[ms]\\
 			\midrule
-			\mbox{Media} & 43.64 & 42.21 & 0.05 & 49.53 & 64.13\\
-			\mbox{Minimo} & 29.74 & 30.36 & 0 & 35.69 & 30.81\\
-			\mbox{1° quartile} & 38.23 & 37.44 & 0 & 43.62 & 37.0\\
-			\mbox{Mediana} & 40.38 & 39.29 & 0 & 45.93 & 39.29\\
-			\mbox{3° quartile} & 42.93 & 41.28 & 0 & 48.31 & 44.07\\
-			\mbox{Massimo} & 208.61 & 170.06 & 1.54 & 179.83 & 271.9\\
+			\mbox{Minimo} & 29.86 & 29.76 & 33.61 & 28.92\\
+			\mbox{1° quartile} & 37.52 & 36.75 & 43.02 & 36.58\\
+			\mbox{Mediana} & 40.09 & 39.39 & 46.33 & 38.96\\
+			\mbox{3° quartile} & 43.3 & 42.05 & 49.75 & 42.35\\
+			\mbox{Massimo} & 171.75 & 163.46 & 170.81 & 267.56\\
+			\mbox{Media} & 42.86 & 41.35 & 48.88 & 57.24\\
 			\bottomrule
 		\end{array}
 		\]
-		\caption{Valori statistici ottenuti dall'esecuzione dell'applicazione monolitica. Tempi espressi in ms}
+		\caption{Valori statistici ottenuti dall'esecuzione dell'applicazione monolitica}
 		\label{tab:tempi-monolitica}
 	\end{table}
 	
@@ -68,29 +68,29 @@
 		\[
 		\begin{array}{lccccc}
 			\toprule
-			\mbox{\textbf{Fase}} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E}\\
+			\mbox{\textbf{Fase}} & \textbf{A}[ms] & \textbf{B}[ms] & \textbf{C}[ms] & \textbf{D}[ms]\\
 			\midrule
-			\mbox{Media} & 44.06 & 44.15 & 0.06 & 62.84 & 7.64\\
-			\mbox{Minimo} & 34.14 & 34.36 & 0 & 46.38 & 5.35\\
-			\mbox{1° quartile} & 37.78 & 37.41 & 0 & 53.26 & 6.97\\
-			\mbox{Mediana} & 39.3 & 38.86 & 0 & 56.49 & 7.35\\
-			\mbox{3° quartile} & 41.45 & 40.97 & 0 & 60.51 & 8.02\\
-			\mbox{Massimo} & 170.22 & 186.01 & 0.69 & 201.11 & 35.31\\
+			\mbox{Minimo} & 34.89 & 33.6 & 44.92 & 138.89\\
+			\mbox{1° quartile} & 39.62 & 36.17 & 51.56 & 146.91\\
+			\mbox{Mediana} & 41.43 & 37.44 & 54.83 & 148.99\\
+			\mbox{3° quartile} & 43.64 & 39.14 & 58.11 & 151.26\\
+			\mbox{Massimo} & 201.69 & 200.33 & 206.92 & 278.27\\
+			\mbox{Media} & 44.05 & 40.64 & 58.31 & 152.51\\
 			\bottomrule
 		\end{array}
 		\]
-		\caption{Valori statistici ottenuti dall'esecuzione dell'applicazione a microservizi. Tempi espressi in ms}
+		\caption{Valori statistici ottenuti dall'esecuzione dell'applicazione a microservizi}
 		\label{tab:tempi-microserv}
 	\end{table}
 
 	\begin{figure}[tbp]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{img/cap5/monolithic/boxplot.png}
+			\includegraphics[width=\linewidth]{img/cap5/monolithic/boxplot.pdf}
 		\end{subfigure}
 		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{img/cap5/monolithic/istogramma.png}
+			\includegraphics[width=\linewidth]{img/cap5/monolithic/istogramma.pdf}
 		\end{subfigure}
 		\caption{Boxplot e istogramma relativi ai tempi di esecuzione dell'applicazione monolitica}
 		\label{fig:grafici-monolitica}
@@ -99,11 +99,11 @@
 	\begin{figure}[tbp]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{img/cap5/microservices/boxplot.png}
+			\includegraphics[width=\linewidth]{img/cap5/microservices/boxplot.pdf}
 		\end{subfigure}
 		\begin{subfigure}{0.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{img/cap5/microservices/istogramma.png}
+			\includegraphics[width=\linewidth]{img/cap5/microservices/istogramma.pdf}
 		\end{subfigure}
 		\caption{Boxplot e istogramma relativi ai tempi di esecuzione dell'applicazione a microservizi}
 		\label{fig:grafici-microserv}
